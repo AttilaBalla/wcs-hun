@@ -12,12 +12,14 @@ import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import {PropsWithChildren} from "react";
-import Link from "next/link";
+import Link from "@mui/material/Link";
+import {ListItemLink} from "@/components/navigation/ListItemLink";
 
 const drawerWidth = 240;
 const navItems = [
   {
-    name: 'Főoldal',
+    name: 'Regisztráció',
+    primary: 'true',
     href: '/'
   },
   {
@@ -48,14 +50,17 @@ export default function DrawerAppBar(props: PropsWithChildren) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{textAlign: 'center'}}>
-      <Typography variant="h6" sx={{my: 2}}>
-        MUI
-      </Typography>
+      <img
+        width={50}
+        height={50}
+        src={'/static/images/logo.png'}
+        alt="logo"
+      />
       <Divider/>
       <List>
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
-            <Link href={item.href}>{item.name}</Link>
+            <ListItemLink item={item}/>
           </ListItem>
         ))}
       </List>
@@ -81,11 +86,16 @@ export default function DrawerAppBar(props: PropsWithChildren) {
             component="div"
             sx={{flexGrow: 1, display: {xs: 'none', sm: 'block'}}}
           >
-            MUI
+            <img
+              width={50}
+              height={50}
+              src={'/static/images/logo.png'}
+              alt="logo"
+            />
           </Typography>
           <Box sx={{display: {xs: 'none', sm: 'block'}}}>
             {navItems.map((item) => (
-              <Link href={item.href}>{item.name}</Link>
+              <ListItemLink item={item}/>
             ))}
           </Box>
         </Toolbar>
@@ -106,7 +116,7 @@ export default function DrawerAppBar(props: PropsWithChildren) {
           {drawer}
         </Drawer>
       </nav>
-      <Box component="main" sx={{p: 3}}>
+      <Box component="main" sx={{width: '100%'}}>
         <Toolbar/>
         {children}
       </Box>

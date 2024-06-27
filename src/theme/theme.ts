@@ -12,8 +12,8 @@ const rawTheme = createTheme({
     },
     secondary: {
       light: '#fff5f8',
-      main: '#ff3366',
-      dark: '#e62958',
+      main: '#c40030',
+      dark: '#c40030',
     },
     warning: {
       main: '#ffc071',
