@@ -10,10 +10,9 @@ import List from '@mui/material/List';
 import ListItem from '@mui/material/ListItem';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
 import {PropsWithChildren} from "react";
-import Link from "@mui/material/Link";
 import {ListItemLink} from "@/components/navigation/ListItemLink";
+import {useRouter} from "next/navigation";
 
 const drawerWidth = 240;
 const navItems = [
@@ -43,19 +42,26 @@ const navItems = [
 export default function DrawerAppBar(props: PropsWithChildren) {
   const {children} = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const router = useRouter();
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
 
+  function navigateToHomePage() {
+    router.push('/');
+  }
+
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{textAlign: 'center'}}>
-      <img
-        width={50}
-        height={50}
-        src={'/static/images/logo.png'}
-        alt="logo"
-      />
+      <Box sx={{cursor: 'pointer'}} onClick={navigateToHomePage}>
+        <img
+          width={50}
+          height={50}
+          src={'/static/images/logo.png'}
+          alt="logo"
+        />
+      </Box>
       <Divider/>
       <List>
         {navItems.map((item) => (
@@ -81,18 +87,18 @@ export default function DrawerAppBar(props: PropsWithChildren) {
           >
             <MenuIcon/>
           </IconButton>
-          <Typography
-            variant="h6"
-            component="div"
-            sx={{flexGrow: 1, display: {xs: 'none', sm: 'block'}}}
+          <Box
+            sx={{display: 'flex', flexGrow: '1'}}
           >
-            <img
-              width={50}
-              height={50}
-              src={'/static/images/logo.png'}
-              alt="logo"
-            />
-          </Typography>
+            <Box sx={{cursor: 'pointer', display: {xs: 'none', sm: 'flex'}, alignItems: 'center'}} onClick={navigateToHomePage}>
+              <img
+                width={50}
+                height={50}
+                src={'/static/images/logo.png'}
+                alt="logo"
+              />
+            </Box>
+          </Box>
           <Box sx={{display: {xs: 'none', sm: 'block'}}}>
             {navItems.map((item) => (
               <ListItemLink item={item}/>

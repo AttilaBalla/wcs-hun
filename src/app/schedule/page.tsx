@@ -1,7 +1,8 @@
-import Box from "@mui/material/Box";
+'use client';
+import {EventSchedule} from "@/components/EventSchedule";
 
 export default function Schedule() {
   return (
-    <Box>wcs-hun-open schedule page will be here</Box>
+    <EventSchedule/>
   );
 }
