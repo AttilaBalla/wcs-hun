@@ -30,7 +30,7 @@ export default function Staff() {
           </StaffCard>
         </Grid>
       </Grid>
-      <Typography variant="h4" marked="center" align="center" component="h2" sx={{py: '2rem'}}>
+      <Typography variant="h4" align="center" component="h2" sx={{py: '2rem'}}>
         Bírák
       </Typography>
       <Grid container spacing={5}>
