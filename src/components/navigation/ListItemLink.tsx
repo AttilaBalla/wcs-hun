@@ -3,10 +3,11 @@ import * as React from "react";
 
 interface IProps {
   item: {
-    name: string,
-    href: string,
+    name: string
+    href: string
     primary?: boolean
   }
+  key?: string
 }
 
 export function ListItemLink(props: IProps) {

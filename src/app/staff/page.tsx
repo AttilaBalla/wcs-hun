@@ -11,7 +11,7 @@ export default function Staff() {
       maxWidth: '1400px',
       margin: 'auto',
       p: {sx: '1rem', sm: '4rem 10rem'}}}>
-      <Typography variant="h4" marked="center" align="center" component="h2" sx={{py: '2rem'}}>
+      <Typography variant="h4" align="center" component="h2" sx={{py: '2rem'}}>
         Szervezők
       </Typography>
       <Grid container spacing={5}>

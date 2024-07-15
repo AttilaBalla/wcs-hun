@@ -101,7 +101,7 @@ export default function DrawerAppBar(props: PropsWithChildren) {
           </Box>
           <Box sx={{display: {xs: 'none', sm: 'block'}}}>
             {navItems.map((item) => (
-              <ListItemLink item={item}/>
+              <ListItemLink item={item} key={item.name}/>
             ))}
           </Box>
         </Toolbar>
