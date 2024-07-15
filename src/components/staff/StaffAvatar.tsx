@@ -20,7 +20,7 @@ export function StaffAvatar(props: IProps) {
       <Avatar src={`/static/images/${imgPath}`} sx={{backgroundColor: theme.palette.secondary.main, mr: '1rem'}}>
         {imgPath ? null : <LocalPoliceIcon/>}
       </Avatar>
-      <Typography variant='body' component={'h3'}>{name}</Typography>
+      <Typography variant='subtitle2' component={'h3'}>{name}</Typography>
     </Box>
   );
 }
