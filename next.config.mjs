@@ -5,10 +5,8 @@ const nextConfig = {
   output: "export",
   basePath: isProd ? '/wcs-hun' : undefined,
   images: {
-    loader: "akamai",
-    path: "",
+    unoptimized: true,
   },
-  assetPrefix: isProd ? 'wcs-hun' : undefined,
 };
 
 export default nextConfig;
