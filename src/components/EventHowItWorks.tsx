@@ -63,7 +63,7 @@ export function EventHowItWorks() {
                   <GroupsIcon sx={{width: 60, height: 60}}/>
                 </Box>
                 <Typography variant="h5" align="center">
-                  Az esemény célja, hogy egy kicsit összehozza a magyar közösséget egy jó buli és egy barátságos verseny formájában. Várunk szeretettel az első West Coast Swing Magyar Kupán, jó hangulattal, díjakkal és sok sok tánccal.
+                  Az esemény célja, hogy egy kicsit összehozza a magyar közösséget egy jó buli és egy barátságos verseny formájában. Várunk szeretettel a második West Coast Swing Magyar Kupán, jó hangulattal, díjakkal és sok sok tánccal.
                 </Typography>
               </Box>
             </Grid>

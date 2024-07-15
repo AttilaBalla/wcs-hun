@@ -4,7 +4,7 @@ import {Button} from "@mui/material";
 import EventPromotionLayout from "@/components/layouts/EventPromotionLayout";
 
 const backgroundImage =
-  '/static/images/cup.jpg';
+  '/static/images/comp.jpg';
 
 export function EventPromotion() {
   return (
@@ -32,7 +32,7 @@ export function EventPromotion() {
         variant="h5"
         sx={{mb: 4, mt: {xs: 4, sm: 10}}}
       >
-        Új verseny, új móka, magyaroknak
+        Verseny és buli a magyar West Coast Swing közösség számára
       </Typography>
       <Button
         color="secondary"
@@ -45,7 +45,7 @@ export function EventPromotion() {
         Menetrend
       </Button>
       <Typography variant="body2" color="inherit" sx={{mt: 2}}>
-        Discover the experience
+        ide mehet még valami.. vagy nem :)
       </Typography>
     </EventPromotionLayout>
   );
