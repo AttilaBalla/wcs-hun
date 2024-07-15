@@ -60,7 +60,7 @@ export default function AppFooter() {
             </Grid>
           </Grid>
           <Grid item xs={6} sm={4} md={2}>
-            <Typography variant="h6" marked="left" gutterBottom>
+            <Typography variant="h6" gutterBottom>
               Legal
             </Typography>
             <Box component="ul" sx={{ m: 0, listStyle: 'none', p: 0 }}>

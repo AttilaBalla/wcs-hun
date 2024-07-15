@@ -51,7 +51,7 @@ export function EventHowItWorks() {
             opacity: 0.7,
           }}
         />
-        <Typography variant="h4" marked="center" component="h2" sx={{ mb: 14 }}>
+        <Typography variant="h4" component="h2" sx={{ mb: 14 }}>
           Az esemény
         </Typography>
         <div>
