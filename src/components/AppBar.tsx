@@ -18,7 +18,7 @@ const drawerWidth = 240;
 const navItems = [
   {
     name: 'Regisztráció',
-    primary: 'true',
+    primary: true,
     href: '/'
   },
   {
