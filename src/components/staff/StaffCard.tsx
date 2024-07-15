@@ -1,7 +1,6 @@
 import {Card, CardContent, CardMedia} from "@mui/material";
 import Typography from "@mui/material/Typography";
 import {PropsWithChildren} from "react";
-import {imgPrefix} from "@/utils/imgPrefix";
 
 interface IProps extends PropsWithChildren {
   imgPath: string,
@@ -18,7 +17,7 @@ export function StaffCard(props: IProps) {
         component="img"
         alt={title}
         height="400"
-        image={`${imgPrefix}/${imgPath}`}
+        image={imgPath}
       />
       <CardContent>
         <Typography gutterBottom variant="h5">

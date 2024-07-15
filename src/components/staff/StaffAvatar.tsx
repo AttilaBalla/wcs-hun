@@ -4,7 +4,6 @@ import LocalPoliceIcon from '@mui/icons-material/LocalPolice';
 import {Avatar, useTheme} from "@mui/material";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
-import {imgPrefix} from "@/utils/imgPrefix";
 
 interface IProps {
   name: string
@@ -18,7 +17,7 @@ export function StaffAvatar(props: IProps) {
 
   return (
     <Box display={'flex'} sx={{alignItems: 'center', margin: '0 2rem'}}>
-      <Avatar src={`${imgPrefix}/static/images/${imgPath}`} sx={{backgroundColor: theme.palette.secondary.main, mr: '1rem'}}>
+      <Avatar src={`/static/images/${imgPath}`} sx={{backgroundColor: theme.palette.secondary.main, mr: '1rem'}}>
         {imgPath ? null : <LocalPoliceIcon/>}
       </Avatar>
       <Typography variant='subtitle2' component={'h3'}>{name}</Typography>
