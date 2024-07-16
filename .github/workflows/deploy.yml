@@ -75,8 +75,9 @@ jobs:
       - name: Set environment values
         run:  | 
           echo "BASE_PATH=/$(echo $GITHUB_REPOSITORY | cut -d '/' -f 2)" >> $GITHUB_ENV
-          echo echo "NODE_ENV=production" >> $GITHUB_ENV
-      - name: Build with Next.js
+          echo "NODE_ENV=production" >> $GITHUB_ENV
+          echo $GITHUB_ENV
+      - name: Build application
         run: ${{ steps.detect-package-manager.outputs.runner }} next build
 
       - name: Upload artifact
