@@ -1,6 +1,6 @@
 import * as React from "react";
-import Link from "@mui/material/Link";
 import NextLink from 'next/link';
+import Link from "@mui/material/Link";
 
 interface IProps {
   item: {
@@ -17,7 +17,7 @@ export function ListItemLink(props: IProps) {
 
   return (
     <Link
-      LinkComponent={NextLink}
+      component={NextLink}
       key={item.name}
       color={item.primary ? 'secondary' : 'inherit'}
       variant="h6"
