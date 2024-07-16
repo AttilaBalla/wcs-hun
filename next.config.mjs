@@ -3,7 +3,7 @@ const isProd = process.env.NODE_ENV === 'production'
 
 const nextConfig = {
   output: "export",
-  basePath: "/wcs-hun",
+  basePath: isProd ? '/wcs-hun' : undefined,
   images: {
     unoptimized: true,
   },
