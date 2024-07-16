@@ -6,9 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="6cd70ca8-719b-4d72-b740-68befb2df917" name="Changes" comment="attempt to fix avatar images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/staff/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/staff/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/staff/StaffAvatar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/staff/StaffAvatar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,13 +38,24 @@
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "/home/attila-balla/.nvm/versions/node/v21.4.0/bin/node",
     "nodejs_package_manager_path": "npm",
+    "npm.dev.executor": "Run",
     "npm.lint.executor": "Run",
     "settings.editor.selected.configurable": "settings.nodejs",
     "ts.external.directory.path": "/home/attila-balla/WebstormProjects/wcs-hun-open/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="npm.dev">
+    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="dev" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -60,6 +68,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.dev" />
         <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
@@ -79,7 +88,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721121107015</updated>
-      <workItem from="1721121108184" duration="1239000" />
+      <workItem from="1721121108184" duration="1555000" />
     </task>
     <task id="LOCAL-00001" summary="fix attempt for link, rebuild IDE config">
       <option name="closed" value="true" />
@@ -97,7 +106,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721122347125</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="attempt to fix avatar images">
+      <option name="closed" value="true" />
+      <created>1721122358846</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1721122358846</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
