@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd70ca8-719b-4d72-b740-68befb2df917" name="Changes" comment="fix attempt for link, rebuild IDE config">
+    <list default="true" id="6cd70ca8-719b-4d72-b740-68befb2df917" name="Changes" comment="attempt to fix avatar images">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/staff/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/staff/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/staff/StaffAvatar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/staff/StaffAvatar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +79,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721121107015</updated>
-      <workItem from="1721121108184" duration="938000" />
+      <workItem from="1721121108184" duration="1239000" />
     </task>
     <task id="LOCAL-00001" summary="fix attempt for link, rebuild IDE config">
       <option name="closed" value="true" />
@@ -86,7 +89,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721121714983</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="attempt to fix avatar images">
+      <option name="closed" value="true" />
+      <created>1721122347125</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1721122347125</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -94,6 +105,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix attempt for link, rebuild IDE config" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix attempt for link, rebuild IDE config" />
+    <MESSAGE value="attempt to fix avatar images" />
+    <option name="LAST_COMMIT_MESSAGE" value="attempt to fix avatar images" />
   </component>
 </project>
