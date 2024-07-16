@@ -35,10 +35,10 @@ export default function Staff() {
       </Typography>
       <Grid container spacing={5}>
         <Grid item xs={12} md={4}>
-          <StaffAvatar name={'Balásy Ádám'} imgPath={'staff-adam.png'}/>
+          <StaffAvatar name={'Balásy Ádám'} imgPath={'/static/images/staff-adam.png'}/>
         </Grid>
         <Grid item xs={12} md={4}>
-          <StaffAvatar name={'Friesz Levente'} imgPath={'staff-levi.jpg'}/>
+          <StaffAvatar name={'Friesz Levente'} imgPath={'/static/images/staff-levi.jpg'}/>
         </Grid>
         <Grid item xs={12} md={4}>
           <StaffAvatar name={'Gombos Tímea'}/>
@@ -53,22 +53,22 @@ export default function Staff() {
           <StaffAvatar name={'Jóri Rita'}/>
         </Grid>
         <Grid item xs={12} md={4}>
-          <StaffAvatar name={'Keller Brigitta'} imgPath={'staff-brigi.jpg'}/>
+          <StaffAvatar name={'Keller Brigitta'} imgPath={'/static/images/staff-brigi.jpg'}/>
         </Grid>
         <Grid item xs={12} md={4}>
           <StaffAvatar name={'Mezei Panni'}/>
         </Grid>
         <Grid item xs={12} md={4}>
-          <StaffAvatar name={'Miskolczy Viktor'} imgPath={'staff-viktor.jpg'}/>
+          <StaffAvatar name={'Miskolczy Viktor'} imgPath={'/static/images/staff-viktor.jpg'}/>
         </Grid>
         <Grid item xs={12} md={4}>
-          <StaffAvatar name={'Ponce Paloma'} imgPath={'staff-paloma.jpg'} />
+          <StaffAvatar name={'Ponce Paloma'} imgPath={'/static/images/staff-paloma.jpg'} />
         </Grid>
         <Grid item xs={12} md={4}>
-          <StaffAvatar name={'Sramli Krisztina'} imgPath={'staff-krisztina.png'}/>
+          <StaffAvatar name={'Sramli Krisztina'} imgPath={'/static/images/staff-krisztina.png'}/>
         </Grid>
         <Grid item xs={12} md={4}>
-          <StaffAvatar name={'Székely Bálint'} imgPath={'staff-balint.jpg'}/>
+          <StaffAvatar name={'Székely Bálint'} imgPath={'/static/images/staff-balint.jpg'}/>
         </Grid>
         <Grid item xs={12} md={4}>
           <StaffAvatar name={'Vajda Zsolt'}/>

@@ -1,9 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd70ca8-719b-4d72-b740-68befb2df917" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/navigation/ListItemLink.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/navigation/ListItemLink.tsx" afterDir="false" />
+    <list default="true" id="6cd70ca8-719b-4d72-b740-68befb2df917" name="Changes" comment="fix attempt for link, rebuild IDE config">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +32,10 @@
     "last_opened_file_path": "/home/attila-balla/WebstormProjects/wcs-hun-open",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "/home/attila-balla/WebstormProjects/wcs-hun-open/node_modules/eslint",
     "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_interpreter_path": "/home/attila-balla/.nvm/versions/node/v21.4.0/bin/node",
     "nodejs_package_manager_path": "npm",
     "npm.lint.executor": "Run",
@@ -72,11 +76,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721121107015</updated>
-      <workItem from="1721121108184" duration="235000" />
+      <workItem from="1721121108184" duration="938000" />
     </task>
+    <task id="LOCAL-00001" summary="fix attempt for link, rebuild IDE config">
+      <option name="closed" value="true" />
+      <created>1721121714983</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1721121714983</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fix attempt for link, rebuild IDE config" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix attempt for link, rebuild IDE config" />
   </component>
 </project>
