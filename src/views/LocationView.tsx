@@ -23,8 +23,8 @@ export function LocationView() {
       height: 360
     },
     desktop: {
-      width: 540,
-      height: 405
+      width: 510,
+      height: 382
     },
   }
 

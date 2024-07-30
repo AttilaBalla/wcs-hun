@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd70ca8-719b-4d72-b740-68befb2df917" name="Changes" comment="tweaks and util functions">
-      <change beforePath="$PROJECT_DIR$/src/components/AppFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppFooter.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/layouts/PageContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/PageContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/views/StaffPresentationView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/StaffPresentationView.tsx" afterDir="false" />
+    <list default="true" id="6cd70ca8-719b-4d72-b740-68befb2df917" name="Changes" comment="add missing DJs, implement footer">
+      <change beforePath="$PROJECT_DIR$/src/utils/useScreenDetector.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/useScreenDetector.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/LocationView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/LocationView.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +103,7 @@
       <option name="presentableId" value="Default" />
       <updated>1721121107015</updated>
       <workItem from="1721121108184" duration="2071000" />
-      <workItem from="1721919150570" duration="14028000" />
+      <workItem from="1721919150570" duration="14628000" />
     </task>
     <task id="LOCAL-00001" summary="fix attempt for link, rebuild IDE config">
       <option name="closed" value="true" />
@@ -162,7 +161,15 @@
       <option name="project" value="LOCAL" />
       <updated>1722365848320</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add missing DJs, implement footer">
+      <option name="closed" value="true" />
+      <created>1722369611692</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1722369611692</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,6 +181,7 @@
     <MESSAGE value="added missing avatars" />
     <MESSAGE value="reorganize view structure, add rest of the views" />
     <MESSAGE value="tweaks and util functions" />
-    <option name="LAST_COMMIT_MESSAGE" value="tweaks and util functions" />
+    <MESSAGE value="add missing DJs, implement footer" />
+    <option name="LAST_COMMIT_MESSAGE" value="add missing DJs, implement footer" />
   </component>
 </project>
