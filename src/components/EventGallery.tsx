@@ -6,6 +6,7 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import Typography from "@mui/material/Typography";
+import {imgPrefix} from "@/utils/imgPrefix";
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',
@@ -57,7 +58,7 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
 
 const images = [
   {
-    url: '/static/images/gallery1.jpg',
+    url: `${imgPrefix}/static/images/gallery1.jpg`,
     title: 'gallery1',
     width: '40%',
   },

@@ -7,6 +7,7 @@ import Divider from "@mui/material/Divider";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import {Stack} from "@mui/material";
 import Link from "@mui/material/Link";
+import {imgPrefix} from "@/utils/imgPrefix";
 
 export default function AppFooter() {
   return (
@@ -21,7 +22,7 @@ export default function AppFooter() {
               <img
                 width={50}
                 height={50}
-                src={'/static/images/logo.png'}
+                src={`${imgPrefix}/static/images/logo.png`}
                 alt="logo"
               />
               <Typography variant="caption">
