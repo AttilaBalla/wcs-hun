@@ -55,7 +55,7 @@ export function LocationView() {
               </li>
             </ul>
           </Box>
-          <Box display={'flex'} sx={{flexDirection: 'column', alignItems: 'center'}}>
+          <Box display={'flex'} sx={{flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
             <Typography>
               <b>A rendezvényközpont házirendje itt található:</b>
             </Typography>
