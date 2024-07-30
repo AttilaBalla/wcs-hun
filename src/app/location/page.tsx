@@ -1,7 +1,7 @@
-import Box from "@mui/material/Box";
+import {LocationView} from "@/views/LocationView";
 
 export default function Location() {
   return (
-    <Box>wcs-hun-open location page will be here</Box>
+    <LocationView/>
   );
 }

@@ -1,7 +1,7 @@
 import {ScheduleStepper} from "@/components/schedule/ScheduleStepper";
 import Box from "@mui/material/Box";
 
-export function EventSchedule() {
+export function ScheduleView() {
   return (
     <Box sx={{display: 'flex'}}>
       <Box sx={{flexGrow: 4, display: {xs: 'none', sm: 'block'}}}>

@@ -1,8 +1,8 @@
 'use client';
-import {EventSchedule} from "@/components/EventSchedule";
+import {ScheduleView} from "@/views/ScheduleView";
 
 export default function Schedule() {
   return (
-    <EventSchedule/>
+    <ScheduleView/>
   );
 }
