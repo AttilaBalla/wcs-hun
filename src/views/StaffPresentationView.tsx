@@ -79,6 +79,18 @@ export function StaffPresentationView() {
       </Grid>
       <Divider sx={{mt: '2rem'}}/>
       <Typography variant="h4" align="center" component="h2" sx={{py: '2rem'}}>
+        DJ-k
+      </Typography>
+      <Grid container spacing={5}>
+        <Grid item xs={12} md={4}>
+          <StaffAvatar name={'Ulrich Ferenc'} imgPath={'staff-feri.png'}/>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <StaffAvatar name={'Szabó Gergely'} imgPath={'staff-gergely.png'}/>
+        </Grid>
+      </Grid>
+      <Divider sx={{mt: '2rem'}}/>
+      <Typography variant="h4" align="center" component="h2" sx={{py: '2rem'}}>
         Segítők
       </Typography>
       <Grid container spacing={5}>

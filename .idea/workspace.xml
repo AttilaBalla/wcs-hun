@@ -4,23 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6cd70ca8-719b-4d72-b740-68befb2df917" name="Changes" comment="attempt to fix avatar images">
-      <change afterPath="$PROJECT_DIR$/src/components/comp/CategoryPanel.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layouts/PageContainer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/typography.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/useScreenDetector.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/CompetionView.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/LocationView.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/views/StaffPresentationView.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/comp/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/comp/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/location/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/location/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/schedule/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/staff/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/staff/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/AppBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppBar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EventHowItWorks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EventHowItWorks.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/EventSchedule.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ScheduleView.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/staff/StaffAvatar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/staff/StaffAvatar.tsx" afterDir="false" />
+    <list default="true" id="6cd70ca8-719b-4d72-b740-68befb2df917" name="Changes" comment="tweaks and util functions">
+      <change beforePath="$PROJECT_DIR$/src/components/AppFooter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppFooter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layouts/PageContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layouts/PageContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/views/StaffPresentationView.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/StaffPresentationView.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -117,7 +104,7 @@
       <option name="presentableId" value="Default" />
       <updated>1721121107015</updated>
       <workItem from="1721121108184" duration="2071000" />
-      <workItem from="1721919150570" duration="10209000" />
+      <workItem from="1721919150570" duration="14028000" />
     </task>
     <task id="LOCAL-00001" summary="fix attempt for link, rebuild IDE config">
       <option name="closed" value="true" />
@@ -151,7 +138,31 @@
       <option name="project" value="LOCAL" />
       <updated>1721122943057</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="added missing avatars">
+      <option name="closed" value="true" />
+      <created>1722365759693</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1722365759693</updated>
+    </task>
+    <task id="LOCAL-00006" summary="reorganize view structure, add rest of the views">
+      <option name="closed" value="true" />
+      <created>1722365813201</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1722365813201</updated>
+    </task>
+    <task id="LOCAL-00007" summary="tweaks and util functions">
+      <option name="closed" value="true" />
+      <created>1722365848320</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1722365848320</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -160,6 +171,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="fix attempt for link, rebuild IDE config" />
     <MESSAGE value="attempt to fix avatar images" />
-    <option name="LAST_COMMIT_MESSAGE" value="attempt to fix avatar images" />
+    <MESSAGE value="added missing avatars" />
+    <MESSAGE value="reorganize view structure, add rest of the views" />
+    <MESSAGE value="tweaks and util functions" />
+    <option name="LAST_COMMIT_MESSAGE" value="tweaks and util functions" />
   </component>
 </project>

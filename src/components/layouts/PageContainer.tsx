@@ -8,6 +8,7 @@ export function PageContainer(props: PropsWithChildren) {
   return (
     <Box sx={{
       maxWidth: '1400px',
+      minHeight: '80vh',
       margin: 'auto',
       p: {xs: '1rem', sm: '2rem', md: '4rem 10rem'}}}>
       {children}
