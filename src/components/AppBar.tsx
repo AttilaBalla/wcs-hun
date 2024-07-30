@@ -13,13 +13,14 @@ import Toolbar from '@mui/material/Toolbar';
 import {PropsWithChildren} from "react";
 import {ListItemLink} from "@/components/navigation/ListItemLink";
 import {useRouter} from "next/navigation";
+import {registrationLink} from "@/utils/constants";
 
 const drawerWidth = 240;
 const navItems = [
   {
     name: 'Regisztráció',
     primary: true,
-    href: 'https://forms.gle/gEQNKKLp8sjq2WkC6'
+    href: registrationLink
   },
   {
     name: 'Csapat',
@@ -54,7 +55,7 @@ export default function DrawerAppBar(props: PropsWithChildren) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{textAlign: 'center'}}>
-      <Box sx={{cursor: 'pointer'}} onClick={navigateToHomePage}>
+      <Box sx={{cursor: 'pointer', mt: '.5rem'}} onClick={navigateToHomePage}>
         <img
           width={50}
           height={50}
