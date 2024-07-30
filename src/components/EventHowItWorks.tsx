@@ -10,6 +10,7 @@ import NightlifeIcon from '@mui/icons-material/Nightlife';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import GroupsIcon from '@mui/icons-material/Groups';
 import {boxHeader} from "@/utils/typography";
+import {imgPrefix} from "@/utils/imgPrefix";
 
 const item: SxProps<Theme> = {
   display: 'flex',
@@ -36,7 +37,7 @@ export function EventHowItWorks() {
       >
         <Box
           component="img"
-          src="/static/images/appCurvyLines.png"
+          src={`${imgPrefix}/static/images/appCurvyLines.png`}
           alt="curvy lines"
           sx={{
             pointerEvents: 'none',
