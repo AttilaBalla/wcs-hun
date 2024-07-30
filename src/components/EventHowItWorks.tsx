@@ -10,7 +10,7 @@ import NightlifeIcon from '@mui/icons-material/Nightlife';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import GroupsIcon from '@mui/icons-material/Groups';
 import {boxHeader} from "@/utils/typography";
-import {imgPrefix} from "@/utils/imgPrefix";
+import {registrationLink} from "@/utils/constants";
 
 const item: SxProps<Theme> = {
   display: 'flex',
@@ -37,7 +37,7 @@ export function EventHowItWorks() {
       >
         <Box
           component="img"
-          src={`${imgPrefix}/static/images/appCurvyLines.png`}
+          src={`/static/images/appCurvyLines.png`}
           alt="curvy lines"
           sx={{
             pointerEvents: 'none',
@@ -91,7 +91,7 @@ export function EventHowItWorks() {
           size="large"
           variant="contained"
           component="a"
-          href="https://forms.gle/gEQNKKLp8sjq2WkC6"
+          href={registrationLink}
           sx={{ mt: 8 }}
         >
           Regisztráció

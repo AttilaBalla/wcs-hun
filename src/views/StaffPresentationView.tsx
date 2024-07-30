@@ -14,7 +14,7 @@ export function StaffPresentationView() {
       </Typography>
       <Grid container spacing={5}>
         <Grid item xs={12} md={6}>
-          <StaffCard title={'Balázs'} imgPath={'/static/images/wcs-balazs.jpg'}>
+          <StaffCard title={'Szapper Balázs'} imgPath={'/static/images/wcs-balazs.jpg'}>
             <Typography variant="body2" color="text.secondary">
               2018 szeptemberében kezdtem el utazásom a West Coast Swing világában, akkor még el sem tudtam képzelni,
               hogy ennyire az életem fontos része lesz. Nagyon sokat kaptam ettől a tánctól és a közösségtől, így
@@ -23,7 +23,7 @@ export function StaffPresentationView() {
           </StaffCard>
         </Grid>
         <Grid item xs={12} md={6}>
-          <StaffCard title={'Bence'} imgPath={'/static/images/wcs-bence.jpg'}>
+          <StaffCard title={'Szilágyi Bence'} imgPath={'/static/images/wcs-bence.jpg'}>
             <Typography variant="body2" color="text.secondary">
               A West Coast Swing 2017 óta része az életemnek és már az elején teljesen be is szippantott. Sosem fogom
               elfelejteni 2018 nyarát, amikor kezdőként a létező összes buliba elmentem és csak élveztem a táncot és a

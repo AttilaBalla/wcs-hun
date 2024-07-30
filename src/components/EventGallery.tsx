@@ -6,7 +6,6 @@ import Box from '@mui/material/Box';
 import ButtonBase from '@mui/material/ButtonBase';
 import Container from '@mui/material/Container';
 import Typography from "@mui/material/Typography";
-import {imgPrefix} from "@/utils/imgPrefix";
 
 const ImageBackdrop = styled('div')(({ theme }) => ({
   position: 'absolute',
@@ -58,47 +57,47 @@ const ImageIconButton = styled(ButtonBase)(({ theme }) => ({
 
 const images = [
   {
-    url: `${imgPrefix}/static/images/gallery1.jpg`,
+    url: `/static/images/gallery1.jpg`,
     title: 'gallery1',
     width: '40%',
   },
   {
-    url: `${imgPrefix}/static/images/gallery2.jpg`,
+    url: `/static/images/gallery2.jpg`,
     title: 'gallery2',
     width: '20%',
   },
   {
-    url: `${imgPrefix}/static/images/gallery3.jpg`,
+    url: `/static/images/gallery3.jpg`,
     title: 'gallery4',
     width: '40%',
   },
   {
-    url: `${imgPrefix}/static/images/gallery4.jpg`,
+    url: `/static/images/gallery4.jpg`,
     title: 'gallery5',
     width: '38%',
   },
   {
-    url: `${imgPrefix}/static/images/gallery5.jpg`,
+    url: `/static/images/gallery5.jpg`,
     title: 'gallery6',
     width: '38%',
   },
   {
-    url: `${imgPrefix}/static/images/gallery6.jpg`,
+    url: `/static/images/gallery6.jpg`,
     title: 'gallery7',
     width: '24%',
   },
   {
-    url: `${imgPrefix}/static/images/gallery7.jpg`,
+    url: `/static/images/gallery7.jpg`,
     title: 'gallery8',
     width: '40%',
   },
   {
-    url: `${imgPrefix}/static/images/gallery8.jpg`,
+    url: `/static/images/gallery8.jpg`,
     title: 'gallery3',
     width: '20%',
   },
   {
-    url: `${imgPrefix}/static/images/gallery9.jpg`,
+    url: `/static/images/gallery9.jpg`,
     title: 'gallery9',
     width: '40%',
   },

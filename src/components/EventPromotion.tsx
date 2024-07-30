@@ -2,7 +2,6 @@ import * as React from 'react';
 import Typography from "@mui/material/Typography";
 import {Button} from "@mui/material";
 import EventPromotionLayout from "@/components/layouts/EventPromotionLayout";
-import {imgPrefix} from "@/utils/imgPrefix";
 
 const backgroundImage =
   '/static/images/comp.jpg';
@@ -11,7 +10,7 @@ export function EventPromotion() {
   return (
     <EventPromotionLayout
       sxBackground={{
-        backgroundImage: `url(${imgPrefix}${backgroundImage})`,
+        backgroundImage: `url(${backgroundImage})`,
         backgroundPosition: 'center',
       }}
     >

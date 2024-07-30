@@ -13,7 +13,6 @@ import Toolbar from '@mui/material/Toolbar';
 import {PropsWithChildren} from "react";
 import {ListItemLink} from "@/components/navigation/ListItemLink";
 import {useRouter} from "next/navigation";
-import {imgPrefix} from "@/utils/imgPrefix";
 
 const drawerWidth = 240;
 const navItems = [
@@ -53,15 +52,13 @@ export default function DrawerAppBar(props: PropsWithChildren) {
     router.push('/');
   }
 
-  const logoUrl = imgPrefix + "/static/images/logo.png";
-
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{textAlign: 'center'}}>
       <Box sx={{cursor: 'pointer'}} onClick={navigateToHomePage}>
         <img
           width={50}
           height={50}
-          src={logoUrl}
+          src={'/static/images/logo.png'}
           alt="logo"
         />
       </Box>
@@ -97,7 +94,7 @@ export default function DrawerAppBar(props: PropsWithChildren) {
               <img
                 width={50}
                 height={50}
-                src={`${imgPrefix}/static/images/logo.png`}
+                src={'/static/images/logo.png'}
                 alt="logo desktop"
               />
             </Box>
