@@ -9,19 +9,13 @@ import {Button} from "@mui/material";
 import NightlifeIcon from '@mui/icons-material/Nightlife';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import GroupsIcon from '@mui/icons-material/Groups';
+import {boxHeader} from "@/utils/typography";
 
 const item: SxProps<Theme> = {
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   px: 5,
-};
-
-const boxHeader = {
-  fontSize: 24,
-  fontFamily: 'default',
-  color: 'secondary.main',
-  fontWeight: 'medium',
 };
 
 export function EventHowItWorks() {

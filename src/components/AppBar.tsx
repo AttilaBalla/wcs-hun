@@ -19,7 +19,7 @@ const navItems = [
   {
     name: 'Regisztráció',
     primary: true,
-    href: '/'
+    href: 'https://forms.gle/gEQNKKLp8sjq2WkC6'
   },
   {
     name: 'Csapat',

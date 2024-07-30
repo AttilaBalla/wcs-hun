@@ -5,12 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6cd70ca8-719b-4d72-b740-68befb2df917" name="Changes" comment="attempt to fix avatar images">
+      <change afterPath="$PROJECT_DIR$/src/components/comp/CategoryPanel.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layouts/PageContainer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/typography.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/useScreenDetector.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/CompetionView.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/LocationView.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/views/StaffPresentationView.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/comp/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/comp/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/location/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/location/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/schedule/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/schedule/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/staff/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/staff/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AppBar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AppBar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EventHowItWorks.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/EventHowItWorks.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/EventSchedule.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/views/ScheduleView.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/staff/StaffAvatar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/staff/StaffAvatar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -24,27 +47,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "main",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "last_opened_file_path": "/home/attila-balla/WebstormProjects/wcs-hun-open",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "/home/attila-balla/WebstormProjects/wcs-hun-open/node_modules/eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_interpreter_path": "/home/attila-balla/.nvm/versions/node/v21.4.0/bin/node",
-    "nodejs_package_manager_path": "npm",
-    "npm.dev.executor": "Run",
-    "npm.lint.executor": "Run",
-    "settings.editor.selected.configurable": "settings.nodejs",
-    "ts.external.directory.path": "/home/attila-balla/WebstormProjects/wcs-hun-open/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/attila-balla/WebstormProjects/wcs-hun-open&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;/home/attila-balla/WebstormProjects/wcs-hun-open/node_modules/eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_interpreter_path&quot;: &quot;/home/attila-balla/.nvm/versions/node/v21.4.0/bin/node&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.dev.executor&quot;: &quot;Run&quot;,
+    &quot;npm.lint.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.nodejs&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/attila-balla/WebstormProjects/wcs-hun-open/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/views" />
+    </key>
+  </component>
   <component name="RunManager" selected="npm.dev">
     <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
@@ -88,7 +116,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1721121107015</updated>
-      <workItem from="1721121108184" duration="1555000" />
+      <workItem from="1721121108184" duration="2071000" />
+      <workItem from="1721919150570" duration="10209000" />
     </task>
     <task id="LOCAL-00001" summary="fix attempt for link, rebuild IDE config">
       <option name="closed" value="true" />
@@ -114,7 +143,15 @@
       <option name="project" value="LOCAL" />
       <updated>1721122358846</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="attempt to fix avatar images">
+      <option name="closed" value="true" />
+      <created>1721122943057</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1721122943057</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
