@@ -53,13 +53,15 @@ export default function DrawerAppBar(props: PropsWithChildren) {
     router.push('/');
   }
 
+  const logoUrl = `${imgPrefix}/static/images/logo.png`;
+
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{textAlign: 'center'}}>
       <Box sx={{cursor: 'pointer'}} onClick={navigateToHomePage}>
         <img
           width={50}
           height={50}
-          src={`${imgPrefix}/static/images/logo.png`}
+          src={logoUrl}
           alt="logo"
         />
       </Box>
