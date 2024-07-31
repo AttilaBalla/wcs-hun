@@ -21,7 +21,7 @@ export function PriceTable() {
         <TableBody>
           <TableRow>
             <TableCell>
-              Részvételi díj
+              Részvételi hozzájárulás
             </TableCell>
             <TableCell align='right'>
               <Typography sx={categoryHeader}>

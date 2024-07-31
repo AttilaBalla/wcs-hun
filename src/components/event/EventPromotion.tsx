@@ -39,7 +39,7 @@ export function EventPromotion() {
         variant="contained"
         size="large"
         component="a"
-        href="/"
+        href="/schedule"
         sx={{minWidth: 200}}
       >
         Menetrend

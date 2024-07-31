@@ -2,15 +2,16 @@ import Typography from "@mui/material/Typography";
 import {Paper, Stack} from "@mui/material";
 import Box from "@mui/material/Box";
 import {categoryHeader} from "@/utils/typography";
+import Divider from "@mui/material/Divider";
 
 export function PriceTableMobile() {
   return (
     <Paper sx={{p: '.75rem'}}>
-      <Typography sx={{...categoryHeader, mb: '1rem'}}>Árak</Typography>
+      <Typography sx={{mb: '1rem'}}><b>Részvételi hozzájárulás</b></Typography>
       <Stack spacing={1}>
         <Box display={'flex'} sx={{justifyContent: 'space-between'}}>
-          <Typography>
-            <b>Részvételi díj elővételben</b>
+          <Typography sx={categoryHeader}>
+            <b>elővételben</b>
           </Typography>
           <Typography sx={categoryHeader}>
             4500 Ft
@@ -18,12 +19,13 @@ export function PriceTableMobile() {
         </Box>
         <Box display={'flex'} sx={{justifyContent: 'space-between'}}>
           <Typography>
-            <b>Részvételi díj helyszínen</b>
+            <b>helyszínen</b>
           </Typography>
           <Typography>
             <b>5000 Ft</b>
           </Typography>
         </Box>
+        <Divider sx={{my: '1rem'}}/>
         <Box display={'flex'} sx={{justifyContent: 'space-between'}}>
           <Typography>
             <b>Verseny nevezés *</b>

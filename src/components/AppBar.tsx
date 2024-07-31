@@ -17,6 +17,10 @@ import {useRouter} from "next/navigation";
 const drawerWidth = 240;
 const navItems = [
   {
+    name: 'Főoldal',
+    href: '/'
+  },
+  {
     name: 'Regisztráció',
     primary: true,
     href: '/registration'
