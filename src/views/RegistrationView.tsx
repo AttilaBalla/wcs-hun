@@ -1,3 +1,5 @@
+'use client';
+
 import {PageContainer} from "@/components/layouts/PageContainer";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
@@ -7,8 +9,13 @@ import Box from "@mui/material/Box";
 import {registrationLink} from "@/utils/constants";
 import {TextLink} from "@/components/navigation/TextLink";
 import {sectionTitle} from "@/utils/typography";
+import {useScreenDetector} from "@/utils/useScreenDetector";
+import {PriceTableMobile} from "@/components/registration/PriceTableMobile";
 
 export function RegistrationView() {
+
+  const {isMobile, isTablet} = useScreenDetector();
+
   return (
     <PageContainer>
       <Typography sx={sectionTitle}>
@@ -23,7 +30,7 @@ export function RegistrationView() {
           További információkért olvasd el a <TextLink href={'/comp'} text={'Verseny'}/> és <TextLink href={'/location'} text={'Helyszín'}/> menüpontokat is!
         </Typography>
         <Box>
-          <PriceTable/>
+          {isMobile ? <PriceTableMobile/> : <PriceTable/>}
           <Typography variant={'caption'}>
             * Advanced és AllStar szintű versenyzőknek a nevezés ingyenes.
           </Typography>

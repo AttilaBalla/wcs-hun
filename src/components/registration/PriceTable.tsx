@@ -34,13 +34,13 @@ export function PriceTable() {
           </TableRow>
           <TableRow>
             <TableCell>
-              Verseny nevezés
+              Verseny nevezés *
             </TableCell>
             <TableCell align='right'>
               -
             </TableCell>
             <TableCell align='right'>
-              <b>2000 Ft *</b>
+              <b>2000 Ft</b>
             </TableCell>
           </TableRow>
         </TableBody>
