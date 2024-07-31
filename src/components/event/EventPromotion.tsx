@@ -39,14 +39,11 @@ export function EventPromotion() {
         variant="contained"
         size="large"
         component="a"
-        href="/schedule"
+        href="/"
         sx={{minWidth: 200}}
       >
         Menetrend
       </Button>
-      <Typography variant="body2" color="inherit" sx={{mt: 2}}>
-        ide mehet még valami.. vagy nem :)
-      </Typography>
     </EventPromotionLayout>
   );
 }

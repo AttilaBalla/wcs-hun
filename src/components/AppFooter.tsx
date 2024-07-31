@@ -1,7 +1,6 @@
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
-import Container from '@mui/material/Container';
 import Typography from "@mui/material/Typography";
 import Divider from "@mui/material/Divider";
 import FacebookIcon from '@mui/icons-material/Facebook';
@@ -10,11 +9,7 @@ import Link from "@mui/material/Link";
 
 export default function AppFooter() {
   return (
-    <Box
-      component="footer"
-      sx={{display: 'flex', bgcolor: 'secondary.light'}}
-    >
-      <Container sx={{my: 6, display: 'flex'}}>
+    <Box component="footer" sx={{display: 'flex', bgcolor: 'secondary.light', py: 6}}>
         <Grid container spacing={5}>
           <Grid item xs={12} sm={4}>
             <Stack direction={'row'} spacing={3} sx={{alignItems: 'center', justifyContent: 'center'}}>
@@ -52,7 +47,6 @@ export default function AppFooter() {
           </Grid>
         </Grid>
         <Divider/>
-      </Container>
     </Box>
   );
 }
