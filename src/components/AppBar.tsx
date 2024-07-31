@@ -13,14 +13,13 @@ import Toolbar from '@mui/material/Toolbar';
 import {PropsWithChildren} from "react";
 import {ListItemLink} from "@/components/navigation/ListItemLink";
 import {useRouter} from "next/navigation";
-import {registrationLink} from "@/utils/constants";
 
 const drawerWidth = 240;
 const navItems = [
   {
     name: 'Regisztráció',
     primary: true,
-    href: registrationLink
+    href: '/registration'
   },
   {
     name: 'Csapat',

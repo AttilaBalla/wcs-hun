@@ -10,7 +10,6 @@ import NightlifeIcon from '@mui/icons-material/Nightlife';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import GroupsIcon from '@mui/icons-material/Groups';
 import {boxHeader} from "@/utils/typography";
-import {registrationLink} from "@/utils/constants";
 
 const item: SxProps<Theme> = {
   display: 'flex',
@@ -53,9 +52,11 @@ export function EventHowItWorks() {
           <Grid container spacing={5}>
             <Grid item xs={12} md={4}>
               <Box sx={item}>
-                <Box sx={boxHeader}>Közösség</Box>
-                <Box sx={{my: '2rem'}}>
+                <Box>
                   <GroupsIcon sx={{width: 60, height: 60}}/>
+                </Box>
+                <Box sx={{my: '2rem'}}>
+                  <Typography sx={boxHeader}>Közösség</Typography>
                 </Box>
                 <Typography variant="h5" align="center">
                   Az esemény célja, hogy egy kicsit összehozza a magyar közösséget egy jó buli és egy barátságos verseny formájában. Várunk szeretettel a második West Coast Swing Magyar Kupán, jó hangulattal, díjakkal és sok sok tánccal.
@@ -64,9 +65,11 @@ export function EventHowItWorks() {
             </Grid>
             <Grid item xs={12} md={4}>
               <Box sx={item}>
-                <Box sx={boxHeader}>Verseny</Box>
-                <Box sx={{my: '2rem'}}>
+                <Box>
                   <EmojiEventsIcon sx={{width: 60, height: 60}}/>
+                </Box>
+                <Box sx={{my: '2rem'}}>
+                  <Typography sx={boxHeader}>Verseny</Typography>
                 </Box>
                 <Typography variant="h5" align="center">
                   Ha már ki akartad próbálni magad versenyen, de ezt egy ismerős közegben szeretnéd megtenni, barátaid társaságában, vagy szeretnéd megmérettetni magad a hazai mezőnyben, akkor itt a remek alkalom.
@@ -75,9 +78,11 @@ export function EventHowItWorks() {
             </Grid>
             <Grid item xs={12} md={4}>
               <Box sx={item}>
-                <Box sx={boxHeader}>Buli</Box>
-                <Box sx={{my: '2rem'}}>
+                <Box>
                   <NightlifeIcon sx={{width: 60, height: 60}}/>
+                </Box>
+                <Box sx={{my: '2rem'}}>
+                  <Typography sx={boxHeader}>Buli</Typography>
                 </Box>
                 <Typography variant="h5" align="center">
                   Természetesen nincs esemény bulizás nélkül. A verseny után DJ-ink a lehető legjobb hangulatot teremtik a szórakozáshoz egészen kora hajnalig.
@@ -91,7 +96,7 @@ export function EventHowItWorks() {
           size="large"
           variant="contained"
           component="a"
-          href={registrationLink}
+          href={'/registration'}
           sx={{ mt: 8 }}
         >
           Regisztráció
