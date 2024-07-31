@@ -24,7 +24,7 @@ export function ListItemLink(props: IProps) {
       underline="none"
       href={item.href}
       sx={{
-        fontSize: 16,
+        fontSize: 15,
         ml: 3,
       }}
     >
