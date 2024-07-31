@@ -5,11 +5,12 @@ import {StaffCard} from "@/components/staff/StaffCard";
 import {StaffAvatar} from "@/components/staff/StaffAvatar";
 import Divider from "@mui/material/Divider";
 import {PageContainer} from "@/components/layouts/PageContainer";
+import {sectionTitle} from "@/utils/typography";
 
 export function StaffPresentationView() {
   return (
     <PageContainer>
-      <Typography variant="h4" align="center" component="h2" sx={{py: '2rem'}}>
+      <Typography sx={sectionTitle}>
         Szervezők
       </Typography>
       <Grid container spacing={5}>
@@ -33,7 +34,7 @@ export function StaffPresentationView() {
           </StaffCard>
         </Grid>
       </Grid>
-      <Typography variant="h4" align="center" component="h2" sx={{py: '2rem'}}>
+      <Typography sx={sectionTitle}>
         Bírák
       </Typography>
       <Grid container spacing={5}>
@@ -78,7 +79,7 @@ export function StaffPresentationView() {
         </Grid>
       </Grid>
       <Divider sx={{mt: '2rem'}}/>
-      <Typography variant="h4" align="center" component="h2" sx={{py: '2rem'}}>
+      <Typography sx={sectionTitle}>
         DJ-k
       </Typography>
       <Grid container spacing={5}>
@@ -90,7 +91,7 @@ export function StaffPresentationView() {
         </Grid>
       </Grid>
       <Divider sx={{mt: '2rem'}}/>
-      <Typography variant="h4" align="center" component="h2" sx={{py: '2rem'}}>
+      <Typography sx={sectionTitle}>
         Segítők
       </Typography>
       <Grid container spacing={5}>

@@ -6,11 +6,12 @@ import {Button, Stack} from "@mui/material";
 import Box from "@mui/material/Box";
 import {registrationLink} from "@/utils/constants";
 import {TextLink} from "@/components/navigation/TextLink";
+import {sectionTitle} from "@/utils/typography";
 
 export function RegistrationView() {
   return (
     <PageContainer>
-      <Typography variant="h4" align="center" component="h2" sx={{py: '2rem'}}>
+      <Typography sx={sectionTitle}>
         Regisztráció
       </Typography>
       <Stack spacing={3}>

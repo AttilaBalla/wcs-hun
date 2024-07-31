@@ -2,11 +2,12 @@ import {PageContainer} from "@/components/layouts/PageContainer";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import {CategoryPanel} from "@/components/comp/CategoryPanel";
+import {sectionTitle} from "@/utils/typography";
 
 export function CompetitionInfo() {
   return (
     <PageContainer>
-      <Typography variant="h4" align="center" component="h2" sx={{py: '2rem'}}>
+      <Typography sx={sectionTitle}>
         Verseny
       </Typography>
       <Typography>
@@ -29,7 +30,7 @@ export function CompetitionInfo() {
         title={'Advanced/Allstar'}
         description={'Akik minimum 30 intermediate ponttal rendelkeznek és vállalják a "self judge" rendszerben lévő verseny lebonyolítást.'}
       />
-      <Typography variant="h4" align="center" component="h2" sx={{py: '2rem'}}>
+      <Typography sx={sectionTitle}>
         Megkötések
       </Typography>
       <Typography>

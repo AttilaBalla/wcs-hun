@@ -4,7 +4,7 @@ import {PageContainer} from "@/components/layouts/PageContainer";
 import Typography from "@mui/material/Typography";
 import * as React from "react";
 import Grid from "@mui/material/Grid";
-import {boxHeader} from "@/utils/typography";
+import {boxHeader, sectionTitle} from "@/utils/typography";
 import Divider from "@mui/material/Divider";
 import {Button} from "@mui/material";
 import Box from "@mui/material/Box";
@@ -30,7 +30,7 @@ export function LocationView() {
 
   return (
     <PageContainer>
-      <Typography variant="h4" align="center" component="h2" sx={{py: '2rem'}}>
+      <Typography sx={sectionTitle}>
         Helyszín
       </Typography>
       <Typography sx={boxHeader} align="center">
@@ -55,7 +55,7 @@ export function LocationView() {
               </li>
             </ul>
           </Box>
-          <Box display={'flex'} sx={{flexDirection: 'column', alignItems: 'center', textAlign: 'center'}}>
+          <Box display={'flex'} sx={{flexDirection: 'column', alignItems: 'center', textAlign: 'center', mt: '2rem'}}>
             <Typography>
               <b>A rendezvényközpont házirendje itt található:</b>
             </Typography>

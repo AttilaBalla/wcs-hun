@@ -9,7 +9,7 @@ import {Button} from "@mui/material";
 import NightlifeIcon from '@mui/icons-material/Nightlife';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import GroupsIcon from '@mui/icons-material/Groups';
-import {boxHeader} from "@/utils/typography";
+import {boxHeader, sectionTitle} from "@/utils/typography";
 
 const item: SxProps<Theme> = {
   display: 'flex',
