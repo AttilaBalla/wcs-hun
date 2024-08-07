@@ -8,18 +8,22 @@ import Typography from '@mui/material/Typography';
 import CelebrationIcon from '@mui/icons-material/Celebration';
 import NightlifeIcon from '@mui/icons-material/Nightlife';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
+import LockIcon from '@mui/icons-material/Lock';
 import {StepConnector, stepConnectorClasses, StepIconProps} from "@mui/material";
 
 
 const steps = [
   {
-    label: '18:00 - Buli (Rising Star DJ Győztes)',
+    label: '18:00 - Buli (DJ Gregmagic)',
   },
   {
-    label: '19:00 - Buli (DJ Gregmagic)',
+    label: '19:00 - Verseny regisztráció lezárása',
   },
   {
-    label: '20:00 - Novice Prelim',
+    label: '19:30 - Novice Prelim',
+  },
+  {
+    label: '20:00 - Inter Prelim',
   },
   {
     label: '20:30 - Newcomer Prelim',
@@ -28,37 +32,38 @@ const steps = [
     label: '21:00 - Novice Final',
   },
   {
-    label: '21:20 - Newcomer Final',
+    label: '21:30 - Newcomer Final',
   },
   {
-    label: '21:40 - Intermediate Final',
+    label: '22:00 - Intermediate Final',
   },
   {
-    label: '22:00 - Advanced/AllStar Final',
+    label: '22:30 - Advanced/AllStar Final',
   },
   {
-    label: '22:30 - Buli (DJ Gregmagic)',
+    label: '23:00 - DJ Rising Star',
   },
   {
-    label: '23:30 - Eredményhirdetés',
+    label: '0:00 - Awards',
   },
   {
-    label: '0:00 - Buli (DJ Feri)',
+    label: '0:30 - Buli (DJ Feri)',
   },
 ];
 
 const icons: { [index: string]: React.ReactElement } = {
   1: <NightlifeIcon/>,
-  2: <NightlifeIcon/>,
-  3: <EmojiEventsIcon/>,
+  2: <LockIcon/>,
+  3: <NightlifeIcon/>,
   4: <EmojiEventsIcon/>,
   5: <EmojiEventsIcon/>,
   6: <EmojiEventsIcon/>,
   7: <EmojiEventsIcon/>,
   8: <EmojiEventsIcon/>,
-  9: <NightlifeIcon/>,
-  10: <CelebrationIcon/>,
-  11: <NightlifeIcon/>,
+  9: <EmojiEventsIcon/>,
+  10: <NightlifeIcon/>,
+  11: <CelebrationIcon/>,
+  12: <NightlifeIcon/>,
 };
 
 const StepperConnector = styled(StepConnector)(({ theme }) => ({

@@ -14,7 +14,7 @@ export function StaffPresentationView() {
         Szervezők
       </Typography>
       <Grid container spacing={5}>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={4}>
           <StaffCard title={'Szapper Balázs'} imgPath={'/static/images/wcs-balazs.jpg'}>
             <Typography variant="body2" color="text.secondary">
               2018 szeptemberében kezdtem el utazásom a West Coast Swing világában, akkor még el sem tudtam képzelni,
@@ -23,13 +23,20 @@ export function StaffPresentationView() {
             </Typography>
           </StaffCard>
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={4}>
           <StaffCard title={'Szilágyi Bence'} imgPath={'/static/images/wcs-bence.jpg'}>
             <Typography variant="body2" color="text.secondary">
               A West Coast Swing 2017 óta része az életemnek és már az elején teljesen be is szippantott. Sosem fogom
               elfelejteni 2018 nyarát, amikor kezdőként a létező összes buliba elmentem és csak élveztem a táncot és a
               közösséget. Mindezek fényében remélem sikerül egy olyan eseményt szervezni, ahol igazán jól érezhetitek
               magatokat.
+            </Typography>
+          </StaffCard>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <StaffCard title={'Singer-Molnár Judit'} imgPath={'/static/images/wcs-judit.jpg'}>
+            <Typography variant="body2" color="text.secondary">
+              2 év kacérkodás után 2017-től west coast swing függő lettem. Már feladtam, hogy újra igazán táncos lehessek, de... Félni újtól, változástól? Nem kell! Itt csak az van, hogy élménnyé válhasson. A közösség színes és vidám. Imádok szurkoló is lenni, majd megünnepelem a versenyzők sikereit egy hajnalig tartó bulival. Kívánom, hogy ezen az eseményen ti is megkapjátok azokat az élményeket, amiket igazán imádtok!
             </Typography>
           </StaffCard>
         </Grid>
@@ -52,9 +59,6 @@ export function StaffPresentationView() {
         </Grid>
         <Grid item xs={12} md={4}>
           <StaffAvatar name={'Jászai Zoltán'} imgPath={'staff-zoli.jpg'}/>
-        </Grid>
-        <Grid item xs={12} md={4}>
-          <StaffAvatar name={'Jóri Rita'} imgPath={'staff-rita.jpg'}/>
         </Grid>
         <Grid item xs={12} md={4}>
           <StaffAvatar name={'Keller Brigitta'} imgPath={'staff-brigi.jpg'}/>
@@ -97,6 +101,12 @@ export function StaffPresentationView() {
       <Grid container spacing={5}>
         <Grid item xs={12} md={4}>
           <StaffAvatar name={'Zotter Orsi'} imgPath={'staff-orsi.png'}/>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <StaffAvatar name={'Albert Annamária'} imgPath={'staff-annamaria.png'}/>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <StaffAvatar name={'Zinger Gábor'} imgPath={'staff-gabor.png'}/>
         </Grid>
       </Grid>
     </PageContainer>

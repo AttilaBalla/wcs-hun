@@ -11,8 +11,7 @@ export function CompetitionInfo() {
         Verseny
       </Typography>
       <Typography>
-        Idén négy szinten szeretnénk meghirdetni a versenyt. A versenyre való regisztrációt a WSDC szintek szerint bonyolítjuk le.
-        A négy verseny csoport a következő:
+        Idén négy szinten hirdetjük meg a versenyeket. A verseny kategóriákat a WSDC szabályainak felhasználásával határoztuk meg. A négy kategória a következő:
       </Typography>
       <CategoryPanel
         title={'Newcomer'}
@@ -31,7 +30,7 @@ export function CompetitionInfo() {
         description={'Akik minimum 30 intermediate ponttal rendelkeznek és vállalják a "self judge" rendszerben lévő verseny lebonyolítást.'}
       />
       <Typography sx={sectionTitle}>
-        Megkötések
+        FONTOS
       </Typography>
       <Typography>
         A newcomer kategóriát kizárólag a kezdő versenyzők számára szeretnénk fenntartani, hogy egy jó versenyélménnyel lehessenek gazdagabbak, így nem áll módunkban engedélyezni, hogy másodlagos szerepben induljon bárki a versenyen.

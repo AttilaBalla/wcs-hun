@@ -7,11 +7,11 @@ import Divider from "@mui/material/Divider";
 export function PriceTableMobile() {
   return (
     <Paper sx={{p: '.75rem'}}>
-      <Typography sx={{mb: '1rem'}}><b>Részvételi hozzájárulás</b></Typography>
+      <Typography sx={{mb: '1rem'}}><b>Hozzájárulási költségek</b></Typography>
       <Stack spacing={1}>
         <Box display={'flex'} sx={{justifyContent: 'space-between'}}>
           <Typography sx={categoryHeader}>
-            <b>elővételben</b>
+            <b>Elővételben</b>
           </Typography>
           <Typography sx={categoryHeader}>
             4500 Ft
@@ -19,10 +19,19 @@ export function PriceTableMobile() {
         </Box>
         <Box display={'flex'} sx={{justifyContent: 'space-between'}}>
           <Typography>
-            <b>helyszínen</b>
+            <b>Helyszínen</b>
           </Typography>
           <Typography>
             <b>5000 Ft</b>
+          </Typography>
+        </Box>
+        <Divider sx={{my: '1rem'}}/>
+        <Box display={'flex'} sx={{justifyContent: 'space-between'}}>
+          <Typography>
+            <b>Nézőként</b>
+          </Typography>
+          <Typography>
+            <b>1000 Ft</b>
           </Typography>
         </Box>
         <Divider sx={{my: '1rem'}}/>
@@ -33,8 +42,7 @@ export function PriceTableMobile() {
           <Typography>
             <b>2000 Ft</b>
           </Typography>
-        </Box>
-      </Stack>
+        </Box></Stack>
     </Paper>
   )
 }
