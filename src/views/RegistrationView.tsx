@@ -38,7 +38,7 @@ export function RegistrationView() {
         <Box display={'flex'} sx={{alignItems: 'center'}}>
           <InfoIcon color={'secondary'} sx={{mr: '.5rem', mb: '3px'}}/>
           <Typography>
-            Elővételes regisztráció: 2024.08.15-ig, Kifizetés: 2024.08.16-ig
+            Elővételes regisztráció: 2024.08.15-ig, befizetés: 2024.08.16-ig
           </Typography>
         </Box>
         <Box>

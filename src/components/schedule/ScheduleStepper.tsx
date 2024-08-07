@@ -54,7 +54,7 @@ const steps = [
 const icons: { [index: string]: React.ReactElement } = {
   1: <NightlifeIcon/>,
   2: <LockIcon/>,
-  3: <NightlifeIcon/>,
+  3: <EmojiEventsIcon/>,
   4: <EmojiEventsIcon/>,
   5: <EmojiEventsIcon/>,
   6: <EmojiEventsIcon/>,
