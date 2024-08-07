@@ -10,7 +10,7 @@ export function TextLink(props: IProps) {
   const {text, href} = props;
 
   return(
-    <Link href={href} color={'secondary'} sx={{textDecoration: 'none'}}>
+    <Link href={href} target={'_blank'} color={'secondary'} sx={{textDecoration: 'none'}}>
       {text}
     </Link>
   )
