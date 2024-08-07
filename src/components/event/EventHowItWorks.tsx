@@ -59,7 +59,7 @@ export function EventHowItWorks() {
                   <Typography sx={boxHeader}>Közösség</Typography>
                 </Box>
                 <Typography variant="h5" align="center">
-                  Az esemény célja, hogy egy kicsit összehozza a magyar közösséget egy szuper buli és egy barátságos hangulatú verseny formájában. Várunk szeretettel a második West Coast Swing Magyar Kupán, jó hangulattal, díjakkal és sok sok tánccal.
+                  Az esemény célja, hogy összekovácsolja a magyar west coast swing közösséget szuper bulival és barátságos hangulatú versenyekkel. Várunk mindenkit a West Coast Swing Magyar Kupán 2024-ben is, kiváló hangulattal, tekintélyes bírói gárdával, díjakkal és persze rengeteg tánccal.
                 </Typography>
               </Box>
             </Grid>
