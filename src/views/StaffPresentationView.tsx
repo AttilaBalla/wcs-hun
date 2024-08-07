@@ -106,7 +106,7 @@ export function StaffPresentationView() {
           <StaffAvatar name={'Albert Annamária'} imgPath={'staff-annamaria.png'}/>
         </Grid>
         <Grid item xs={12} md={4}>
-          <StaffAvatar name={'Zinger Gábor'} imgPath={'staff-gabor.png'}/>
+          <StaffAvatar name={'Singer Gábor'} imgPath={'staff-gabor.png'}/>
         </Grid>
       </Grid>
     </PageContainer>

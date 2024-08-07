@@ -49,7 +49,7 @@ export function PriceTable() {
               Verseny nevezés *
             </TableCell>
             <TableCell align='right'>
-              -
+              <b>2000 Ft</b>
             </TableCell>
             <TableCell align='right'>
               <b>2000 Ft</b>
