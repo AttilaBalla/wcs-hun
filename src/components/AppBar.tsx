@@ -22,7 +22,6 @@ const navItems = [
   },
   {
     name: 'Regisztráció',
-    primary: true,
     href: '/registration'
   },
   {
@@ -103,7 +102,7 @@ export default function DrawerAppBar(props: PropsWithChildren) {
               />
             </Box>
           </Box>
-          <Box sx={{display: {xs: 'none', sm: 'block'}}}>
+          <Box sx={{display: {xs: 'none', sm: 'flex'}}}>
             {navItems.map((item) => (
               <ListItemLink item={item} key={item.name}/>
             ))}
