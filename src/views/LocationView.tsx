@@ -9,6 +9,7 @@ import Divider from "@mui/material/Divider";
 import {Button} from "@mui/material";
 import Box from "@mui/material/Box";
 import {useScreenDetector} from "@/utils/useScreenDetector";
+import Image from 'next/image';
 
 export function LocationView() {
 
@@ -95,6 +96,9 @@ export function LocationView() {
           </Box>
         </Grid>
       </Grid>
+      <Box sx={{position: 'relative', height: isMobile ? '250px' : '550px', mt: '2rem'}}>
+        <Image fill priority src={'/static/images/csarnok.png'} alt={'csarnok'}/>
+      </Box>
     </PageContainer>
   )
 }
