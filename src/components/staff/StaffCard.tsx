@@ -12,7 +12,7 @@ export function StaffCard(props: IProps) {
   const {imgPath, title, children} = props;
 
   return (
-    <Card sx={{maxWidth: '40rem', minHeight: '38rem'}}>
+    <Card sx={{maxWidth: '40rem', minHeight: '44rem'}}>
       <CardMedia
         component="img"
         alt={title}

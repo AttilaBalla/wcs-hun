@@ -2,7 +2,7 @@
 
 import {PageContainer} from "@/components/layouts/PageContainer";
 import Typography from "@mui/material/Typography";
-import * as React from "react";
+import InfoIcon from '@mui/icons-material/Info';
 import {PriceTable} from "@/components/registration/PriceTable";
 import {Button, Stack} from "@mui/material";
 import Box from "@mui/material/Box";
@@ -14,7 +14,7 @@ import {PriceTableMobile} from "@/components/registration/PriceTableMobile";
 
 export function RegistrationView() {
 
-  const {isMobile, isTablet} = useScreenDetector();
+  const {isMobile} = useScreenDetector();
 
   return (
     <PageContainer>
@@ -35,23 +35,28 @@ export function RegistrationView() {
             * Advanced és AllStar szintű versenyzőknek a nevezés ingyenes.
           </Typography>
         </Box>
+        <Box display={'flex'} sx={{alignItems: 'center'}}>
+          <InfoIcon color={'secondary'} sx={{mr: '.5rem', mb: '3px'}}/>
+          <Typography>
+            Elővételes regisztráció: 2024.08.15-ig, befizetés: 2024.08.16-ig
+          </Typography>
+        </Box>
         <Box>
           <Typography>
-            A eseményen/versenyen való részvétellel a résztvevő:
+            Az eseményen táncosként, versenyzőként és nézőként való részvétellel, minden személy:
           </Typography>
           <ul>
             <li>
-              Kijelenti, hogy elfogadja és betartja a helyszín házirendjét.
+              Kijelenti, hogy megismerte, elfogadja és betartja a helyszín <TextLink href={'http://rendezveny.folyondar.hu/rolunk/hazirend/'} text={'házirendjét'}/> és <TextLink href={'https://drive.google.com/file/d/15mNzTVj8ThkQurizvUNrBWTAT1txTylp/view?usp=sharing'} text={'tűzvédelmi szabályzatát'}/>.
             </li>
             <li>
-              Elfogadja, hogy a rendezvényen kép és hangfelvétel készülhet, melyen való szerepléshez a hozzájárulását
-              adja.
+              Elfogadja, hogy a rendezvényen kép és hangfelvétel készülhet, azokon való szerepléshez a hozzájárulását adja.
             </li>
             <li>
-              Vállalja, hogy az értékeiért a helyszín és a szervezők felelősséget nem vállalnak.
+              Elfogadja, hogy az eseményen megjelentek értékeiért sem a helyszín üzemeltetője, sem a szervezők felelősséget nem vállalnak.
             </li>
             <li>
-              Vállalja, hogy a belépéskor kapott karszalagot a távozás pillanatáig magán tartja.
+              Elfogadja, hogy a belépéskor kapott karszalagot a távozás pillanatáig magán kell viselnie.
             </li>
           </ul>
         </Box>

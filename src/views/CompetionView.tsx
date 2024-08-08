@@ -3,43 +3,58 @@ import Typography from "@mui/material/Typography";
 import * as React from "react";
 import {CategoryPanel} from "@/components/comp/CategoryPanel";
 import {sectionTitle} from "@/utils/typography";
+import {Stack} from "@mui/material";
+import {
+  competitionNotes,
+  textCompetitionCategoriesDescription,
+  textAdvancedDescription,
+  textIntermediateDescription,
+  textNewcomerDescription,
+  textNoviceDescription
+} from "@/texts/competitionView";
 
-export function CompetitionInfo() {
+export function CompetitionView() {
   return (
     <PageContainer>
       <Typography sx={sectionTitle}>
         Verseny
       </Typography>
       <Typography>
-        Idén négy szinten szeretnénk meghirdetni a versenyt. A versenyre való regisztrációt a WSDC szintek szerint bonyolítjuk le.
-        A négy verseny csoport a következő:
+        {textCompetitionCategoriesDescription}
       </Typography>
       <CategoryPanel
         title={'Newcomer'}
-        description={'Olyan versenyzők, akik még nem rendelkeznek WSDC ponttal, és szeretnék kipróbálni magukat egy versenyen.'}
+        description={textNewcomerDescription}
       />
       <CategoryPanel
         title={'Novice'}
-        description={'Akik nem rendelkeznek WSDC ponttal, vagy már van Newcomer vagy Novice szinten pontjuk és maximum 15 Novice ponttal rendelkeznek.'}
+        description={textNoviceDescription}
       />
       <CategoryPanel
         title={'Intermediate'}
-        description={'Akiknek minimum 16 Novice pontjuk van, vagy maximum 29 Intermediate ponttal rendelkeznek.'}
+        description={textIntermediateDescription}
       />
       <CategoryPanel
         title={'Advanced/Allstar'}
-        description={'Akik minimum 30 intermediate ponttal rendelkeznek és vállalják a "self judge" rendszerben lévő verseny lebonyolítást.'}
+        description={textAdvancedDescription}
       />
       <Typography sx={sectionTitle}>
-        Megkötések
+        {competitionNotes.title}
       </Typography>
-      <Typography>
-        A newcomer kategóriát kizárólag a kezdő versenyzők számára szeretnénk fenntartani, hogy egy jó versenyélménnyel lehessenek gazdagabbak, így nem áll módunkban engedélyezni, hogy másodlagos szerepben induljon bárki a versenyen.
-        Ennek megfelelően, <b>ha indulsz magasabb kategóriában az eredeti szerepkörödben és/vagy rendelkezel már WSDC ponttal, akkor Newcomerben nem indulhatsz az ellenkező szerepben sem.</b> Magasabb szinten ez engedélyezett (Inter follower/leader, vagy advanced follower leader indulhat novice, illetve intermediate szinten fordított szerepben).
-
-        Elsődleges célunk ezzel, hogy támogassuk és bátorítsuk a kezdő versenyzőket. Köszönjük a megértést!
-
-      </Typography>
+      <Stack spacing={2}>
+        <Typography>
+          {competitionNotes.p1}
+        </Typography>
+        <Typography>
+          <b>{competitionNotes.secondaryRolesTitle}</b>
+        </Typography>
+        <Typography>
+          {competitionNotes.p2}
+        </Typography>
+        <Typography>
+          {competitionNotes.p3}
+        </Typography>
+      </Stack>
     </PageContainer>
   )
 }

@@ -9,6 +9,7 @@ import Divider from "@mui/material/Divider";
 import {Button} from "@mui/material";
 import Box from "@mui/material/Box";
 import {useScreenDetector} from "@/utils/useScreenDetector";
+import Image from 'next/image';
 
 export function LocationView() {
 
@@ -39,39 +40,37 @@ export function LocationView() {
       <Divider sx={{mb: '1rem'}}/>
       <Grid container spacing={5}>
         <Grid item xs={12} md={6}>
-          <Box sx={{margin: 'auto', width: 'fit-content'}}>
+          <Box display={'flex'} sx={{justifyContent: 'center'}}>
             <ul>
               <li>
-                hatalmas tánctér és légtér méret
+                Hatalmas tánctér és légtér
               </li>
               <li>
-                kellemes, jól szeparálható és tekintélyes méretű közösségi terek
+                Kellemes, jól szeparálható és tekintélyes méretű közösségi terek
               </li>
               <li>
-                az elkülönített, igényes, nem éppen picike parkolóban csak a miénk a terep
+                Az elkülönített, igényes, nem éppen pici parkolóban csak a miénk a terep
               </li>
               <li>
-                a tömegközlekedést választók sem kerülnek hátrányba
+                A tömegközlekedést választók sem kerülnek hátrányba
               </li>
             </ul>
           </Box>
-          <Box display={'flex'} sx={{flexDirection: 'column', alignItems: 'center', textAlign: 'center', mt: '2rem'}}>
+          <Box sx={{paddingLeft: {sx: 0, sm: '25px'}, textAlign: 'center', mt: '2rem'}}>
             <Typography>
-              <b>A rendezvényközpont házirendje itt található:</b>
+              <b>A rendezvényközpontról további információ itt található:</b>
             </Typography>
             <Button
               color="secondary"
               variant="contained"
               size="large"
               component="a"
-              href="http://rendezveny.folyondar.hu/rolunk/hazirend/"
+              target='_blank'
+              href="http://folyondar.hu/"
               sx={{minWidth: 200, my: '1rem'}}
             >
-              Házirend
+              Weboldal
             </Button>
-            <Typography>
-              Kérjük, hogy figyelmesen olvassátok el.
-            </Typography>
           </Box>
         </Grid>
         <Grid item xs={12} md={6}>
@@ -95,6 +94,9 @@ export function LocationView() {
           </Box>
         </Grid>
       </Grid>
+      <Box sx={{position: 'relative', height: isMobile ? '250px' : '550px', mt: '2rem'}}>
+        <Image fill priority src={'/static/images/csarnok.png'} alt={'csarnok'}/>
+      </Box>
     </PageContainer>
   )
 }

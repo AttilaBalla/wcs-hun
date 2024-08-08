@@ -9,7 +9,7 @@ import {Button} from "@mui/material";
 import NightlifeIcon from '@mui/icons-material/Nightlife';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import GroupsIcon from '@mui/icons-material/Groups';
-import {boxHeader, sectionTitle} from "@/utils/typography";
+import {boxHeader} from "@/utils/typography";
 
 const item: SxProps<Theme> = {
   display: 'flex',
@@ -59,7 +59,7 @@ export function EventHowItWorks() {
                   <Typography sx={boxHeader}>Közösség</Typography>
                 </Box>
                 <Typography variant="h5" align="center">
-                  Az esemény célja, hogy egy kicsit összehozza a magyar közösséget egy jó buli és egy barátságos verseny formájában. Várunk szeretettel a második West Coast Swing Magyar Kupán, jó hangulattal, díjakkal és sok sok tánccal.
+                  Az esemény célja, hogy összekovácsolja a magyar west coast swing közösséget szuper bulival és barátságos hangulatú versenyekkel. Várunk mindenkit a West Coast Swing Magyar Kupán 2024-ben is, kiváló hangulattal, tekintélyes bírói gárdával, díjakkal és persze rengeteg tánccal.
                 </Typography>
               </Box>
             </Grid>
@@ -72,7 +72,7 @@ export function EventHowItWorks() {
                   <Typography sx={boxHeader}>Verseny</Typography>
                 </Box>
                 <Typography variant="h5" align="center">
-                  Ha már ki akartad próbálni magad versenyen, de ezt egy ismerős közegben szeretnéd megtenni, barátaid társaságában, vagy szeretnéd megmérettetni magad a hazai mezőnyben, akkor itt a remek alkalom.
+                  Ha már kacérkodtál a gondolattal és szívesen megtapasztalnád a verseny adta élményt is, itt a lehetőség, ráadásul a barátaid társaságában. Szeretnéd megméretni magad a hazai közösségen belül, itt a remek alkalom.
                 </Typography>
               </Box>
             </Grid>
@@ -85,7 +85,7 @@ export function EventHowItWorks() {
                   <Typography sx={boxHeader}>Buli</Typography>
                 </Box>
                 <Typography variant="h5" align="center">
-                  Természetesen nincs esemény bulizás nélkül. A verseny után DJ-ink a lehető legjobb hangulatot teremtik a szórakozáshoz egészen kora hajnalig.
+                  Esemény buli nélkül? Azt már nem! A versenyek előtt, közben és után is a DJ-k oltári hangulatot teremtenek. Gyere nyitásra és táncolj egészen hajnalig.
                 </Typography>
               </Box>
             </Grid>
