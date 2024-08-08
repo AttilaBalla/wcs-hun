@@ -3,53 +3,56 @@ import Typography from "@mui/material/Typography";
 import * as React from "react";
 import {CategoryPanel} from "@/components/comp/CategoryPanel";
 import {sectionTitle} from "@/utils/typography";
-import Box from "@mui/material/Box";
 import {Stack} from "@mui/material";
+import {
+  competitionNotes,
+  textCompetitionCategoriesDescription,
+  textAdvancedDescription,
+  textIntermediateDescription,
+  textNewcomerDescription,
+  textNoviceDescription
+} from "@/texts/competitionView";
 
-export function CompetitionInfo() {
+export function CompetitionView() {
   return (
     <PageContainer>
       <Typography sx={sectionTitle}>
         Verseny
       </Typography>
       <Typography>
-        Idén négy szinten hirdetjük meg a versenyeket. A verseny kategóriákat a WSDC szabályainak felhasználásával
-        határoztuk meg. A négy kategória a következő:
+        {textCompetitionCategoriesDescription}
       </Typography>
       <CategoryPanel
         title={'Newcomer'}
-        description={'Olyan versenyzők, akik még nem rendelkeznek WSDC ponttal, és szeretnék kipróbálni a verseny élményét. (vagy szeretnék megméretni magukat egy versenyen)'}
+        description={textNewcomerDescription}
       />
       <CategoryPanel
         title={'Novice'}
-        description={'Akik nem rendelkeznek WSDC ponttal, vagy már van pontjuk de maximum 15 Novice ponttal rendelkeznek.'}
+        description={textNoviceDescription}
       />
       <CategoryPanel
         title={'Intermediate'}
-        description={'Akiknek minimum 16 Novice pontjuk van és maximum 29 Intermediate ponttal rendelkeznek.'}
+        description={textIntermediateDescription}
       />
       <CategoryPanel
         title={'Advanced/Allstar'}
-        description={'Akik legalább 30 intermediate ponttal rendelkeznek és vállalják a "self judge" rendszerben való versenyzést.'}
+        description={textAdvancedDescription}
       />
       <Typography sx={sectionTitle}>
-        FONTOS
+        {competitionNotes.title}
       </Typography>
       <Stack spacing={2}>
         <Typography>
-          A Newcomer kategória kizárólag a kezdő versenyzők kategóriája. Célunk, hogy támogassuk a kezdő versenyzőket és
-          bátorítsuk a versenyzéssel kacérkodókat.
+          {competitionNotes.p1}
         </Typography>
         <Typography>
-          <b>Másodlagos szerepben való versenyzés:</b>
+          <b>{competitionNotes.secondaryRolesTitle}</b>
         </Typography>
         <Typography>
-          Csak Novice és felette lévő kategóriákban van lehetőség másodlagos szerepben való versenyzésre, a WSDC
-          szabályainak figyelembevétele mellett.
+          {competitionNotes.p2}
         </Typography>
         <Typography>
-          Egyértelműsítve, Intermediate kategóriába sorolt versenyző, Novice kategóriában, Advance/All Star kategóriába
-          sorolt versenyző Intermediate kategóriában nevezhet másodlagos szerepben való megméretésre.
+          {competitionNotes.p3}
         </Typography>
       </Stack>
     </PageContainer>

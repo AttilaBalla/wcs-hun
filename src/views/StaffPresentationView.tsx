@@ -6,6 +6,7 @@ import {StaffAvatar} from "@/components/staff/StaffAvatar";
 import Divider from "@mui/material/Divider";
 import {PageContainer} from "@/components/layouts/PageContainer";
 import {sectionTitle} from "@/utils/typography";
+import {introTextBalazs, introTextBence, introTextJudit} from "@/texts/staffView";
 
 export function StaffPresentationView() {
   return (
@@ -17,26 +18,21 @@ export function StaffPresentationView() {
         <Grid item xs={12} md={4}>
           <StaffCard title={'Szapper Balázs'} imgPath={'/static/images/wcs-balazs.jpg'}>
             <Typography variant="body2" color="text.secondary">
-              2018 szeptemberében kezdtem el utazásom a West Coast Swing világában, akkor még el sem tudtam képzelni,
-              hogy ennyire az életem fontos része lesz. Nagyon sokat kaptam ettől a tánctól és a közösségtől, így
-              szeretnék vissza is adni. Remélem annyira fogjátok élvezni ezt az eseményt, mint ahogy azt megálmodtuk.
+              {introTextBalazs}
             </Typography>
           </StaffCard>
         </Grid>
         <Grid item xs={12} md={4}>
           <StaffCard title={'Szilágyi Bence'} imgPath={'/static/images/wcs-bence.jpg'}>
             <Typography variant="body2" color="text.secondary">
-              A West Coast Swing 2017 óta része az életemnek és már az elején teljesen be is szippantott. Sosem fogom
-              elfelejteni 2018 nyarát, amikor kezdőként a létező összes buliba elmentem és csak élveztem a táncot és a
-              közösséget. Mindezek fényében remélem sikerül egy olyan eseményt szervezni, ahol igazán jól érezhetitek
-              magatokat.
+              {introTextBence}
             </Typography>
           </StaffCard>
         </Grid>
         <Grid item xs={12} md={4}>
           <StaffCard title={'Singer-Molnár Judit'} imgPath={'/static/images/wcs-judit.jpg'}>
             <Typography variant="body2" color="text.secondary">
-              2 év kacérkodás után 2017-től west coast swing függő lettem. Már feladtam, hogy újra igazán táncos lehessek, de... Félni újtól, változástól? Nem kell! Itt csak az van, hogy élménnyé válhasson. A közösség színes és vidám. Imádok szurkoló is lenni, majd megünnepelem a versenyzők sikereit egy hajnalig tartó bulival. Kívánom, hogy ezen az eseményen ti is megkapjátok azokat az élményeket, amiket igazán imádtok!
+              {introTextJudit}
             </Typography>
           </StaffCard>
         </Grid>

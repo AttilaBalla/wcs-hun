@@ -43,7 +43,7 @@ export function LocationView() {
           <Box display={'flex'} sx={{justifyContent: 'center'}}>
             <ul>
               <li>
-                Hatalmas tánctér és légtér méret
+                Hatalmas tánctér és légtér
               </li>
               <li>
                 Kellemes, jól szeparálható és tekintélyes méretű közösségi terek

@@ -1,7 +1,7 @@
-import {CompetitionInfo} from "@/views/CompetionView";
+import {CompetitionView} from "@/views/CompetionView";
 
 export default function Comp() {
   return (
-    <CompetitionInfo/>
+    <CompetitionView/>
   );
 }
