@@ -23,6 +23,8 @@ export function RegistrationView() {
       </Typography>
       <Stack spacing={3}>
         <Typography>
+          Elővételes regisztráció 2024.08.15-ig, a hozzájárulást pedig 2024.08.16-ig kell befizetni regisztráció után. 
+          Elővételes regisztráció esetén az alábbi kedvezményt tudjuk biztosítani a táncosok résztvevői hozzájárulásából. 
           Ha még nem versenyeztél, de szeretnéd kipróbálni és megtudni milyen érzés, miért ne tennéd ezt a barátaid,
           ismerőseid körében?
         </Typography>
@@ -33,12 +35,6 @@ export function RegistrationView() {
           {isMobile ? <PriceTableMobile/> : <PriceTable/>}
           <Typography variant={'caption'}>
             * Advanced és AllStar szintű versenyzőknek a nevezés ingyenes.
-          </Typography>
-        </Box>
-        <Box display={'flex'} sx={{alignItems: 'center'}}>
-          <InfoIcon color={'secondary'} sx={{mr: '.5rem', mb: '3px'}}/>
-          <Typography>
-            Elővételes regisztráció: 2024.08.15-ig, befizetés: 2024.08.16-ig
           </Typography>
         </Box>
         <Box>
