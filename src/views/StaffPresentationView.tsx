@@ -69,6 +69,9 @@ export function StaffPresentationView() {
           <StaffAvatar name={'Miskolczy Viktor'} imgPath={'staff-viktor.jpg'}/>
         </Grid>
         <Grid item xs={12} md={4}>
+          <StaffAvatar name={'Pártos Andrea'} imgPath={'staff-andi.jpg'}/>
+        </Grid>
+        <Grid item xs={12} md={4}>
           <StaffAvatar name={'Ponce Paloma'} imgPath={'staff-paloma.jpg'}/>
         </Grid>
         <Grid item xs={12} md={4}>
