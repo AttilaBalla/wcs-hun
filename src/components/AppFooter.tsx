@@ -36,7 +36,7 @@ export default function AppFooter() {
             Az esemény menetrendi és egyéb változtatási jogát fenntartjuk.
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={4} sx={{display: 'flex', alignItems: 'center'}}>
+        <Grid item xs={12} sm={4} sx={{display: 'flex', alignItems: 'center', justifyContent: 'center'}}>
           <Link href={'https://www.facebook.com/profile.php?id=61550693754475'}
                 target={'_blank'}
                 sx={{textDecoration: 'none'}}>
