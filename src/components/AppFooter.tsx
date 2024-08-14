@@ -36,14 +36,16 @@ export default function AppFooter() {
           </Typography>
         </Grid>
         <Grid item xs={12} sm={4}>
-          <Stack direction={'row'} spacing={2} sx={{alignItems: 'center'}}>
-            <Link href={'https://www.facebook.com/profile.php?id=61550693754475'}>
+          <Link href={'https://www.facebook.com/profile.php?id=61550693754475'}
+                target={'_blank'}
+                sx={{textDecoration: 'none'}}>
+            <Stack direction={'row'} spacing={2} sx={{alignItems: 'center', justifyContent: 'center'}}>
               <FacebookIcon fontSize={'large'} color="secondary"/>
-            </Link>
-            <Typography variant={'caption'}>
-              Kövesd eseményünket a facebookon is!
-            </Typography>
-          </Stack>
+              <Typography variant={'caption'}>
+                Kövesd eseményünket a facebookon is!
+              </Typography>
+            </Stack>
+          </Link>
         </Grid>
       </Grid>
       <Divider/>

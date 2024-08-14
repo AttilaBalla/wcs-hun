@@ -2,7 +2,6 @@
 
 import {PageContainer} from "@/components/layouts/PageContainer";
 import Typography from "@mui/material/Typography";
-import InfoIcon from '@mui/icons-material/Info';
 import {PriceTable} from "@/components/registration/PriceTable";
 import {Button, Stack} from "@mui/material";
 import Box from "@mui/material/Box";
@@ -11,6 +10,7 @@ import {TextLink} from "@/components/navigation/TextLink";
 import {sectionTitle} from "@/utils/typography";
 import {useScreenDetector} from "@/utils/useScreenDetector";
 import {PriceTableMobile} from "@/components/registration/PriceTableMobile";
+import {registrationDetails, registrationFurtherInfo} from "@/texts/registrationView";
 
 export function RegistrationView() {
 
@@ -23,13 +23,10 @@ export function RegistrationView() {
       </Typography>
       <Stack spacing={3}>
         <Typography>
-          Elővételes regisztráció 2024.08.15-ig, a hozzájárulást pedig 2024.08.16-ig kell befizetni regisztráció után. 
-          Elővételes regisztráció esetén az alábbi kedvezményt tudjuk biztosítani a táncosok résztvevői hozzájárulásából. 
-          Ha még nem versenyeztél, de szeretnéd kipróbálni és megtudni milyen érzés, miért ne tennéd ezt a barátaid,
-          ismerőseid körében?
+          {registrationDetails}
         </Typography>
         <Typography>
-          További információkért olvasd el a <TextLink href={'/comp'} text={'Verseny'}/> és <TextLink href={'/location'} text={'Helyszín'}/> menüpontokat is!
+          {registrationFurtherInfo}
         </Typography>
         <Box>
           {isMobile ? <PriceTableMobile/> : <PriceTable/>}
