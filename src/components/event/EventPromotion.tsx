@@ -30,9 +30,17 @@ export function EventPromotion() {
         color="inherit"
         align="center"
         variant="h5"
-        sx={{mb: 4, mt: {xs: 4, sm: 10}}}
+        sx={{mb: 1, mt: {xs: 4, sm: 10}}}
       >
         Verseny és buli a magyar West Coast Swing közösség számára
+      </Typography>
+      <Typography
+        color="inherit"
+        align="center"
+        variant="subtitle1"
+        sx={{mb: 4, mt: 1}}
+      >
+        2024. 08. 24.
       </Typography>
       <Button
         color="secondary"
