@@ -40,7 +40,7 @@ export function EventPromotion() {
         variant="subtitle1"
         sx={{mb: 4, mt: 1}}
       >
-        2024. 08.24.
+        2024. 08. 24.
       </Typography>
       <Button
         color="secondary"
