@@ -13,7 +13,7 @@ export default function AppFooter() {
     <Box component="footer" sx={{display: 'flex', bgcolor: 'secondary.light', py: 6}}>
       <Grid container spacing={5}>
         <Grid item xs={12} sm={4}>
-          <Stack direction={'row'} spacing={3} sx={{alignItems: 'center', justifyContent: 'center'}}>
+          <Stack direction={'row'} spacing={1} sx={{alignItems: 'center', justifyContent: 'center'}}>
             <Image
               width={50}
               height={50}
