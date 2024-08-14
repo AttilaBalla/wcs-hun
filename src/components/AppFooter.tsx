@@ -6,6 +6,7 @@ import Divider from "@mui/material/Divider";
 import FacebookIcon from '@mui/icons-material/Facebook';
 import {Stack} from "@mui/material";
 import Link from "@mui/material/Link";
+import Image from "next/image";
 
 export default function AppFooter() {
   return (
@@ -13,7 +14,7 @@ export default function AppFooter() {
       <Grid container spacing={5}>
         <Grid item xs={12} sm={4}>
           <Stack direction={'row'} spacing={3} sx={{alignItems: 'center', justifyContent: 'center'}}>
-            <img
+            <Image
               width={50}
               height={50}
               src={'/static/images/logo.png'}
@@ -35,13 +36,13 @@ export default function AppFooter() {
             Az esemény menetrendi és egyéb változtatási jogát fenntartjuk.
           </Typography>
         </Grid>
-        <Grid item xs={12} sm={4}>
+        <Grid item xs={12} sm={4} sx={{display: 'flex', alignItems: 'center'}}>
           <Link href={'https://www.facebook.com/profile.php?id=61550693754475'}
                 target={'_blank'}
                 sx={{textDecoration: 'none'}}>
-            <Stack direction={'row'} spacing={2} sx={{alignItems: 'center', justifyContent: 'center'}}>
+            <Stack direction={'row'} spacing={1} sx={{alignItems: 'center', justifyContent: 'center'}}>
               <FacebookIcon fontSize={'large'} color="secondary"/>
-              <Typography variant={'caption'}>
+              <Typography variant={'caption'} sx={{lineHeight: 0}}>
                 Kövesd eseményünket a facebookon is!
               </Typography>
             </Stack>
