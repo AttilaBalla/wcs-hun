@@ -1,7 +1,7 @@
 import React from 'react';
 import {EventPromotion} from "@/components/event/EventPromotion";
-import {EventGallery} from "@/components/event/EventGallery";
 import {EventHowItWorks} from "@/components/event/EventHowItWorks";
+import {EventImageGallery} from "@/components/event/EventImageGallery";
 
 export default function Home() {
 
@@ -9,7 +9,7 @@ export default function Home() {
     <React.Fragment>
       <EventPromotion/>
       <EventHowItWorks/>
-      <EventGallery/>
+      <EventImageGallery/>
     </React.Fragment>
   );
 }
