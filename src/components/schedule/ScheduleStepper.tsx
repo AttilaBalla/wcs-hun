@@ -12,42 +12,53 @@ import LockIcon from '@mui/icons-material/Lock';
 import {StepConnector, stepConnectorClasses, StepIconProps} from "@mui/material";
 
 
-const steps = [
+const steps: {label: string, dj?: string}[] = [
   {
-    label: '18:00 - Buli (DJ Gregmagic)',
+    label: '18:00 - 19:00 Tánc/Buli/Party',
+    dj: 'DJ GregMagic'
   },
   {
-    label: '19:00 - Verseny regisztráció lezárása',
+    label: '18:30 - Versenyregisztráció lezárása',
   },
   {
-    label: '19:30 - Novice Prelim',
+    label: '19:00 - 19:25 Novice Prelim',
   },
   {
-    label: '20:00 - Inter Prelim',
+    label: '19:30 - 19:55 Newcomer Prelim',
   },
   {
-    label: '20:30 - Newcomer Prelim',
+    label: '20:00 - 20:25 Intermediate Prelim',
   },
   {
-    label: '21:00 - Novice Final',
+    label: '20:25 - 20:55 Tánc/Buli/Party',
+    dj: 'DJ GregMagic'
   },
   {
-    label: '21:30 - Newcomer Final',
+    label: '21:00 - 21:15 Novice Finals',
   },
   {
-    label: '22:00 - Intermediate Final',
+    label: '21:20 - 21:35 Newcomer Finals',
   },
   {
-    label: '22:30 - Advanced/AllStar Final',
+    label: '21:45 - 22:15 Intermediate Finals',
   },
   {
-    label: '23:00 - DJ Rising Star',
+    label: '22:30 - 23:00 Advanced/AllStar Finals',
   },
   {
-    label: '0:00 - Awards',
+    label: '23:00 - 23:30 Tánc/Buli/Party',
+    dj: 'DJ RisingStar'
   },
   {
-    label: '0:30 - Buli (DJ Feri)',
+    label: '23:30 - 23:50 Díjátadó/Awards',
+  },
+  {
+    label: '23:50 - 00:20 Tánc/Buli/Party',
+    dj: 'DJ RisingStar'
+  },
+  {
+    label: '00:20 - 02:00 Tánc/Buli/Party',
+    dj: 'DJ Feri'
   },
 ];
 
@@ -61,14 +72,16 @@ const icons: { [index: string]: React.ReactElement } = {
   7: <EmojiEventsIcon/>,
   8: <EmojiEventsIcon/>,
   9: <EmojiEventsIcon/>,
-  10: <NightlifeIcon/>,
-  11: <CelebrationIcon/>,
-  12: <NightlifeIcon/>,
+  10: <EmojiEventsIcon/>,
+  11: <NightlifeIcon/>,
+  12: <CelebrationIcon/>,
+  13: <NightlifeIcon/>,
+  14: <NightlifeIcon/>,
 };
 
 const StepperConnector = styled(StepConnector)(({ theme }) => ({
   width: '3px',
-  marginLeft: '22px',
+  marginLeft: '18px',
   [`&.${stepConnectorClasses.alternativeLabel}`]: {
     top: 22,
   },
@@ -80,6 +93,7 @@ const StepperConnector = styled(StepConnector)(({ theme }) => ({
   },
   [`&.${stepConnectorClasses.completed}`]: {
     [`& .${stepConnectorClasses.line}`]: {
+      minHeight: '16px',
       backgroundImage:
         'linear-gradient( 95deg,rgb(242,113,33) 0%,rgb(233,64,87) 50%,rgb(138,35,135) 100%)',
     },
@@ -99,8 +113,8 @@ const StepperIconRoot = styled('div')<{
   backgroundColor: theme.palette.mode === 'dark' ? theme.palette.grey[700] : '#ccc',
   zIndex: 1,
   color: '#fff',
-  width: 50,
-  height: 50,
+  width: 40,
+  height: 40,
   display: 'flex',
   borderRadius: '50%',
   justifyContent: 'center',
@@ -117,10 +131,10 @@ const StepperIconRoot = styled('div')<{
 }));
 
 export function ScheduleStepper() {
-  const [activeStep, setActiveStep] = React.useState(11);
-  const [completed, setCompleted] = React.useState<{
-    [k: number]: boolean;
-  }>({});
+  const [activeStep, setActiveStep] = React.useState(13);
+  // const [completed, setCompleted] = React.useState<{
+  //   [k: number]: boolean;
+  // }>({});
 
   function SetStepperIcon(props: StepIconProps) {
     const {active, completed, className} = props;
@@ -134,12 +148,17 @@ export function ScheduleStepper() {
 
   return (
     <Box sx={{maxWidth: 400}}>
+      <Typography sx={{marginBottom: '1rem'}}>
+        A menetrenden nem szerepel, de a versenyrészek közötti szünetekben is mindenkié a táncparkett.
+      </Typography>
       <Stepper activeStep={activeStep} orientation="vertical" connector={<StepperConnector/>}>
-        {steps.map((step, index) => (
+        {steps.map((step) => (
           <Step key={step.label}>
             <StepLabel StepIconComponent={SetStepperIcon}>
-              <Typography fontWeight={600}>{step.label}</Typography>
+              <Typography variant={'body1'} fontWeight={600}>{step.label}</Typography>
+              {step.dj ? <Typography fontWeight={400}>{step.dj}</Typography> : null}
             </StepLabel>
+
           </Step>
         ))}
       </Stepper>
