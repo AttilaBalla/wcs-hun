@@ -68,7 +68,7 @@ const icons: { [index: string]: React.ReactElement } = {
   3: <EmojiEventsIcon/>,
   4: <EmojiEventsIcon/>,
   5: <EmojiEventsIcon/>,
-  6: <EmojiEventsIcon/>,
+  6: <NightlifeIcon/>,
   7: <EmojiEventsIcon/>,
   8: <EmojiEventsIcon/>,
   9: <EmojiEventsIcon/>,
