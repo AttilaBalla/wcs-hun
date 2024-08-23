@@ -148,9 +148,6 @@ export function ScheduleStepper() {
 
   return (
     <Box sx={{maxWidth: 400}}>
-      <Typography sx={{marginBottom: '1rem'}}>
-        A menetrenden nem szerepel, de a versenyrészek közötti szünetekben is mindenkié a táncparkett.
-      </Typography>
       <Stepper activeStep={activeStep} orientation="vertical" connector={<StepperConnector/>}>
         {steps.map((step) => (
           <Step key={step.label}>
