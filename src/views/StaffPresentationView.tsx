@@ -90,10 +90,16 @@ export function StaffPresentationView() {
       </Typography>
       <Grid container spacing={5}>
         <Grid item xs={12} md={4}>
-          <StaffAvatar name={'Ulrich Ferenc'} imgPath={'staff-feri.png'}/>
+          <StaffAvatar name={'Ulrich Ferenc'} imgPath={'staff-feri.jpg'}/>
         </Grid>
         <Grid item xs={12} md={4}>
-          <StaffAvatar name={'Szabó Gergely'} imgPath={'staff-gergely.png'}/>
+          <StaffAvatar name={'Szabó Gergely'} imgPath={'staff-gergely.jpg'}/>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <StaffAvatar name={'Fazekas Emese'} imgPath={'staff-emese.jpg'}/>
+        </Grid>
+        <Grid item xs={12} md={4}>
+          <StaffAvatar name={'Csonka Dorottya'} imgPath={'staff-dorottya.jpg'}/>
         </Grid>
       </Grid>
       <Divider sx={{mt: '2rem'}}/>

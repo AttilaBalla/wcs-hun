@@ -7,7 +7,7 @@ export function ScheduleView() {
       <Box sx={{ display: {xs: 'none', sm: 'block'}, width: '70%'}}>
         <img width={'90%'} height={'100%'} src={'/static/images/cup.jpg'} alt={'cup'}/>
       </Box>
-      <Box sx={{p: '3rem'}}>
+      <Box sx={{p: '1.5rem'}}>
         <ScheduleStepper/>
       </Box>
     </Box>
