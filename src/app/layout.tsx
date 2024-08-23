@@ -3,8 +3,6 @@ import type {Metadata} from "next";
 import {CssBaseline, ThemeProvider} from "@mui/material";
 import {AppRouterCacheProvider} from "@mui/material-nextjs/v13-appRouter";
 import theme from "@/theme/theme";
-import DrawerAppBar from "@/components/AppBar";
-import AppFooter from "@/components/AppFooter";
 
 
 export const metadata: Metadata = {
@@ -27,10 +25,7 @@ export default function RootLayout({
     <CssBaseline/>
     <AppRouterCacheProvider>
       <ThemeProvider theme={theme}>
-        <DrawerAppBar>
-          {children}
-        </DrawerAppBar>
-        <AppFooter/>
+        {children}
       </ThemeProvider>
     </AppRouterCacheProvider>
     </body>

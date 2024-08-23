@@ -18,7 +18,7 @@ const drawerWidth = 240;
 const navItems = [
   {
     name: 'Főoldal',
-    href: '/'
+    href: '/home'
   },
   {
     name: 'Regisztráció',
@@ -52,7 +52,7 @@ export default function DrawerAppBar(props: PropsWithChildren) {
   };
 
   function navigateToHomePage() {
-    router.push('/');
+    router.push('/home');
   }
 
   const drawer = (
