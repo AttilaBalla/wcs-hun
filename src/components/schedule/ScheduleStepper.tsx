@@ -10,6 +10,7 @@ import NightlifeIcon from '@mui/icons-material/Nightlife';
 import EmojiEventsIcon from '@mui/icons-material/EmojiEvents';
 import LockIcon from '@mui/icons-material/Lock';
 import {StepConnector, stepConnectorClasses, StepIconProps} from "@mui/material";
+import {StepperIconRoot} from "@/components/shared/Icons";
 
 
 const steps: {label: string, dj?: string}[] = [
@@ -105,29 +106,6 @@ const StepperConnector = styled(StepConnector)(({ theme }) => ({
       theme.palette.mode === 'dark' ? theme.palette.grey[800] : '#eaeaf0',
     borderRadius: 1,
   },
-}));
-
-const StepperIconRoot = styled('div')<{
-  ownerState: { completed?: boolean; active?: boolean };
-}>(({theme, ownerState}) => ({
-  backgroundColor: theme.palette.mode === 'dark' ? theme.palette.grey[700] : '#ccc',
-  zIndex: 1,
-  color: '#fff',
-  width: 40,
-  height: 40,
-  display: 'flex',
-  borderRadius: '50%',
-  justifyContent: 'center',
-  alignItems: 'center',
-  ...(ownerState.active && {
-    backgroundImage:
-      'linear-gradient( 136deg, rgb(242,113,33) 0%, rgb(233,64,87) 50%, rgb(138,35,135) 100%)',
-    boxShadow: '0 4px 10px 0 rgba(0,0,0,.25)',
-  }),
-  ...(ownerState.completed && {
-    backgroundImage:
-      'linear-gradient( 136deg, rgb(242,113,33) 0%, rgb(233,64,87) 50%, rgb(138,35,135) 100%)',
-  }),
 }));
 
 export function ScheduleStepper() {
