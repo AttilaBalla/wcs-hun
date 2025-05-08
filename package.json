@@ -9,17 +9,17 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/cache": "^11.11.0",
-    "@emotion/react": "^11.11.4",
-    "@emotion/styled": "^11.11.5",
-    "@mui/icons-material": "^5.15.17",
-    "@mui/material": "^5.15.17",
-    "@mui/material-nextjs": "^5.15.11",
-    "i18next": "^23.11.4",
-    "next": "14.2.3",
-    "react": "^18",
-    "react-dom": "^18",
-    "react-i18next": "^14.1.1"
+    "@emotion/cache": "^11.14.0",
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@mui/icons-material": "^5.17.1",
+    "@mui/material": "^5.17.1",
+    "@mui/material-nextjs": "^5.16.14",
+    "i18next": "^25.1.2",
+    "next": "15.3.2",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "react-i18next": "^15.5.1"
   },
   "devDependencies": {
     "@nestjs/config": "^3.2.2",
