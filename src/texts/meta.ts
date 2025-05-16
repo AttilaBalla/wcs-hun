@@ -1,2 +1,2 @@
-export const eventDate = '2025. 08. 31.'
+export const eventDate = '2025. 08. 30.'
 export const footerYear = '2025'
