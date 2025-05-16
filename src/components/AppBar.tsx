@@ -18,27 +18,33 @@ const drawerWidth = 240;
 const navItems = [
   {
     name: 'Főoldal',
-    href: '/'
+    href: '/',
+    disabled: false
   },
   {
     name: 'Regisztráció',
-    href: '/registration'
+    href: '/registration',
+    disabled: false
   },
   {
     name: 'Csapat',
-    href: '/staff'
+    href: '/staff',
+    disabled: false
   },
   {
     name: 'Verseny',
-    href: '/comp'
+    href: '/comp',
+    disabled: false
   },
   {
     name: 'Menetrend',
-    href: '/schedule'
+    href: '/schedule',
+    disabled: true
   },
   {
     name: 'Helyszín',
-    href: '/location'
+    href: '/location',
+    disabled: false
   }
 ];
 

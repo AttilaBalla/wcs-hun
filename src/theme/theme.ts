@@ -29,6 +29,10 @@ const rawTheme = createTheme({
       main: green[500],
       dark: green[700],
     },
+    text: {
+      primary: '#000000',
+      secondary: '#ffffff'
+    }
   },
   typography: {
     fontFamily: "'Work Sans', sans-serif",

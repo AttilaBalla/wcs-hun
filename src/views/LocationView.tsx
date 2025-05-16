@@ -6,10 +6,8 @@ import * as React from "react";
 import Grid from "@mui/material/Grid";
 import {boxHeader, sectionTitle} from "@/utils/typography";
 import Divider from "@mui/material/Divider";
-import {Button} from "@mui/material";
 import Box from "@mui/material/Box";
 import {useScreenDetector} from "@/utils/useScreenDetector";
-import Image from 'next/image';
 
 export function LocationView() {
 
@@ -35,49 +33,55 @@ export function LocationView() {
         Helyszín
       </Typography>
       <Typography sx={boxHeader} align="center">
-        Folyondár Vasas Sport- és Táncközpont – 1037 Budapest, Folyondár utca 15.
+        Budapest Honvéd Sportegyesület Kosárlabda csarnoka
+      </Typography>
+      <Typography sx={boxHeader} align="center">
+        1134 Budapest, Dózsa György út 53.
       </Typography>
       <Divider sx={{mb: '1rem'}}/>
       <Grid container spacing={5}>
-        <Grid item xs={12} md={6}>
+        <Grid size={{xs: 12, md: 6}}>
           <Box display={'flex'} sx={{justifyContent: 'center'}}>
             <ul>
               <li>
-                Hatalmas tánctér és légtér
+                Külön bejárat a Tüzér utca felől
               </li>
               <li>
-                Kellemes, jól szeparálható és tekintélyes méretű közösségi terek
+                Hatalmas minőségi tánctér
               </li>
               <li>
-                Az elkülönített, igényes, nem éppen pici parkolóban csak a miénk a terep
+                Kellemes, jól szeparált és tágas közösségi terek
               </li>
               <li>
-                A tömegközlekedést választók sem kerülnek hátrányba
+                Ingyenes parkolási lehetőség a létesítményt övező utcákban
+              </li>
+              <li>
+                A tömegközlekedés mellett döntők igazán sok lehetőség közül választhatnak
               </li>
             </ul>
           </Box>
-          <Box sx={{paddingLeft: {sx: 0, sm: '25px'}, textAlign: 'center', mt: '2rem'}}>
-            <Typography>
-              <b>A rendezvényközpontról további információ itt található:</b>
-            </Typography>
-            <Button
-              color="secondary"
-              variant="contained"
-              size="large"
-              component="a"
-              target='_blank'
-              href="http://folyondar.hu/"
-              sx={{minWidth: 200, my: '1rem'}}
-            >
-              Weboldal
-            </Button>
-          </Box>
+          {/*<Box sx={{paddingLeft: {sx: 0, sm: '25px'}, textAlign: 'center', mt: '2rem'}}>*/}
+          {/*  <Typography>*/}
+          {/*    <b>A rendezvényközpontról további információ itt található:</b>*/}
+          {/*  </Typography>*/}
+          {/*  <Button*/}
+          {/*    color="secondary"*/}
+          {/*    variant="contained"*/}
+          {/*    size="large"*/}
+          {/*    component="a"*/}
+          {/*    target='_blank'*/}
+          {/*    href="http://folyondar.hu/"*/}
+          {/*    sx={{minWidth: 200, my: '1rem'}}*/}
+          {/*  >*/}
+          {/*    Weboldal*/}
+          {/*  </Button>*/}
+          {/*</Box>*/}
         </Grid>
-        <Grid item xs={12} md={6}>
+        <Grid size={{xs: 12, md: 6}}>
           <Box sx={{margin: 'auto', width: 'fit-content'}}>
             <iframe
               style={{border: 'none'}}
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3322.4885593967388!2d19.026009134697834!3d47.53462724976117!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741d9455fc02b13%3A0x3ca11f9a41e8cd9a!2sFolyond%C3%A1r%20Vasas%20Sport%20and%20Dance%20Center!5e0!3m2!1sen!2sat!4v1722361099958!5m2!1sen!2sat"
+              src="https://www.google.com/maps/embed?pb=!1m17!1m11!1m3!1d799.9954814004194!2d19.06761032955644!3d47.52182439945834!2m2!1f0!2f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4741db8ca746601d%3A0xae0940ea854be42!2zQnVkYXBlc3QsIETDs3pzYSBHecO2cmd5IMO6dCA1MywgMTEzNA!5e1!3m2!1sen!2shu!4v1747422799160!5m2!1sen!2shu"
               width={isMobile ?
                 mapDimensions.mobile.width :
                 isTablet ?
@@ -94,9 +98,9 @@ export function LocationView() {
           </Box>
         </Grid>
       </Grid>
-      <Box sx={{position: 'relative', height: isMobile ? '250px' : '550px', mt: '2rem'}}>
-        <Image fill priority src={'/static/images/csarnok.png'} alt={'csarnok'}/>
-      </Box>
+      {/*<Box sx={{position: 'relative', height: isMobile ? '250px' : '550px', mt: '2rem'}}>*/}
+      {/*  <Image fill priority src={'/static/images/csarnok.png'} alt={'csarnok'}/>*/}
+      {/*</Box>*/}
     </PageContainer>
   )
 }

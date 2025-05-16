@@ -10,7 +10,7 @@ import {
   textAdvancedDescription,
   textIntermediateDescription,
   textNewcomerDescription,
-  textNoviceDescription
+  textNoviceDescription, textMastersDescription
 } from "@/texts/competitionView";
 
 export function CompetitionView() {
@@ -37,6 +37,10 @@ export function CompetitionView() {
       <CategoryPanel
         title={'Advanced/Allstar'}
         description={textAdvancedDescription}
+      />
+      <CategoryPanel
+          title={'Masters'}
+          description={textMastersDescription}
       />
       <Typography sx={sectionTitle}>
         {competitionNotes.title}

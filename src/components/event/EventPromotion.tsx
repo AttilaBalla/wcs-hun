@@ -1,57 +1,58 @@
 import * as React from 'react';
 import Typography from "@mui/material/Typography";
-import {Button} from "@mui/material";
+import { Button } from "@mui/material";
 import EventPromotionLayout from "@/components/layouts/EventPromotionLayout";
+import { eventDate } from "@/texts/meta";
 
 const backgroundImage =
-  '/static/images/comp.jpg';
+    '/static/images/comp.jpg';
 
 export function EventPromotion() {
   return (
-    <EventPromotionLayout
-      sxBackground={{
-        backgroundImage: `url(${backgroundImage})`,
-        backgroundPosition: 'center',
-      }}
-    >
-      {/* Increase the network loading priority of the background image. */}
-      <img
-        style={{display: 'none'}}
-        src={backgroundImage}
-        alt="increase priority"
-      />
-      <Typography color="inherit" align="center" variant="h2">
-        West Coast Swing
-      </Typography>
-      <Typography color="inherit" align="center" variant="h2">
-        Magyar Kupa
-      </Typography>
-      <Typography
-        color="inherit"
-        align="center"
-        variant="h5"
-        sx={{mb: 1, mt: {xs: 4, sm: 10}}}
+      <EventPromotionLayout
+          sxBackground={{
+            backgroundImage: `url(${backgroundImage})`,
+            backgroundPosition: 'center',
+          }}
       >
-        Verseny és buli a magyar West Coast Swing közösség számára
-      </Typography>
-      <Typography
-        color="inherit"
-        align="center"
-        variant="subtitle1"
-        sx={{mb: 4, mt: 1}}
-      >
-        2024. 08. 24.
-      </Typography>
-      <Button
-        color="secondary"
-        variant="contained"
-        size="large"
-        component="a"
-        href="/schedule"
-        sx={{minWidth: 200}}
-      >
-        Menetrend
-      </Button>
-    </EventPromotionLayout>
+        {/* Increase the network loading priority of the background image. */}
+        <img
+            style={{display: 'none'}}
+            src={backgroundImage}
+            alt="increase priority"
+        />
+        <Typography color="inherit" align="center" variant="h2">
+          West Coast Swing
+        </Typography>
+        <Typography color="inherit" align="center" variant="h2">
+          Magyar Kupa
+        </Typography>
+        <Typography
+            color="inherit"
+            align="center"
+            variant="h5"
+            sx={{mb: 1, mt: {xs: 4, sm: 10}}}
+        >
+          Verseny és buli a magyar West Coast Swing közösség számára
+        </Typography>
+        <Typography
+            color="inherit"
+            align="center"
+            variant="subtitle1"
+            sx={{mb: 4, mt: 1}}
+        >
+          {eventDate}
+        </Typography>
+        <Button
+            color="secondary"
+            variant="contained"
+            size="large"
+            component="a"
+            href="/schedule"
+            sx={{minWidth: 200}}
+        >
+          Menetrend
+        </Button>
+      </EventPromotionLayout>
   );
 }

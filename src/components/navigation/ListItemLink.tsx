@@ -1,13 +1,14 @@
 import * as React from "react";
 import NextLink from 'next/link';
 import Link from "@mui/material/Link";
-import {styled} from "@mui/material";
-import {usePathname} from "next/navigation";
+import { styled } from "@mui/material";
+import { usePathname } from "next/navigation";
 
 interface IProps {
   item: {
     name: string
     href: string
+    disabled: boolean
   }
   key?: string
 }
@@ -18,10 +19,10 @@ export function ListItemLink(props: IProps) {
   const {item} = props;
   const pathName = usePathname();
 
-  const StyledNextLink = styled(NextLink)(({theme}) => ({
+  const StyledNextLink = styled(NextLink)<{ isDisabled: boolean }>(({theme, isDisabled}) => ({
     display: 'block',
+    cursor: isDisabled ? 'not-allowed' : 'pointer',
     position: 'relative',
-    color: theme.palette.text.primary,
     fontSize: "1rem",
     fontWeight: 600,
     lineHeight: '2rem',
@@ -30,7 +31,7 @@ export function ListItemLink(props: IProps) {
     transition: theme.transitions.create('color', {
       duration: theme.transitions.duration.shorter
     }),
-    '&:hover': {
+    '&:hover': isDisabled ? {} : {
       color: theme.palette.secondary.main
     },
     '&:after': {
@@ -48,28 +49,29 @@ export function ListItemLink(props: IProps) {
       // -100% causes an artifact on chrome
       transform: pathName === item.href ? 'none' : 'translate3d(-101%, 0, 0)',
     },
-    '&:hover:after': {
+    '&:hover:after': isDisabled ? {} : {
       transform: 'translate3d(0, 0, 0)'
     },
-    '&:focus:after': {
+    '&:focus:after': isDisabled ? {} : {
       transform: 'translate3d(0, 0, 0)'
     }
   }))
 
   return (
-    <Link
-      component={StyledNextLink}
-      key={item.name}
-      color={'inherit'}
-      variant="h6"
-      underline="none"
-      href={item.href}
-      sx={{
-        fontSize: 15,
-        ml: 3,
-      }}
-    >
-      {item.name}
-    </Link>
+      <Link
+          component={StyledNextLink}
+          key={item.name}
+          isDisabled={item.disabled}
+          color={item.disabled ? 'textDisabled' : 'inherit'}
+          variant="h6"
+          underline="none"
+          href={item.disabled ? '' : item.href}
+          sx={{
+            fontSize: 15,
+            ml: 3,
+          }}
+      >
+        {item.name}
+      </Link>
   )
 }

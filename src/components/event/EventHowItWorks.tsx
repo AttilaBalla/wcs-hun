@@ -50,7 +50,7 @@ export function EventHowItWorks() {
         </Typography>
         <div>
           <Grid container spacing={5}>
-            <Grid item xs={12} md={4}>
+            <Grid size={{xs: 12, md: 4}}>
               <Box sx={item}>
                 <Box>
                   <GroupsIcon sx={{width: 60, height: 60}}/>
@@ -63,7 +63,7 @@ export function EventHowItWorks() {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{xs: 12, md: 4}}>
               <Box sx={item}>
                 <Box>
                   <EmojiEventsIcon sx={{width: 60, height: 60}}/>
@@ -76,7 +76,7 @@ export function EventHowItWorks() {
                 </Typography>
               </Box>
             </Grid>
-            <Grid item xs={12} md={4}>
+            <Grid size={{xs: 12, md: 4}}>
               <Box sx={item}>
                 <Box>
                   <NightlifeIcon sx={{width: 60, height: 60}}/>
